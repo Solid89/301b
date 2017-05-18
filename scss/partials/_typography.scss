@@ -1,6 +1,10 @@
 /* -------------------------------- 
 xTypography 
 -------------------------------- */
+// fonts
+
+$primary-font: 'Roboto', serif;
+$secondary-font: 'Arial', sans-serif; // Add quicksand later
 
 h1, h2 {
 	font-family: $secondary-font;
