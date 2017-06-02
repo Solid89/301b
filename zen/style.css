@@ -1,0 +1,274 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/* basic elements */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 2em;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+@media (max-width: 40em) {
+  header {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; }
+
+  .summary {
+    flex: 0 0 36%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    background: gray; }
+
+  .preamble {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; }
+
+  .supporting {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; }
+
+  aside {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; }
+
+  p {
+    flex: 0 0 36%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    background: lightgray; }
+
+  .design-selection {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; }
+
+  .design-archives {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; }
+
+  .zen-resources {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: gray; } }
+@media (min-width: 40em) {
+  header {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none; }
+
+  .intro {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none; }
+
+  .summary {
+    flex: 0 0 36%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap; }
+
+  .preamble {
+    flex: 0 0 36%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap; }
+
+  .supporting {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none; }
+
+  aside {
+    flex: 0 0 100%;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none; }
+
+  p {
+    flex: 0 0 36%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 14px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 10px 20px -12px black;
+    border: .05em solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap; } }
+/* Base classes for all media */
+.Grid--fit > .Grid-cell {
+  flex: 1; }
+
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%; }
+
+.Grid--1of2 > .Grid-cell {
+  flex: 0 0 50%; }
+
+.Grid--1of3 > .Grid-cell {
+  flex: 0 0 33.3333%; }
+
+.Grid--1of4 > .Grid-cell {
+  flex: 0 0 25%; }
+
+/* Small to medium screens */
+@media (min-width: 24em) {
+  .small-Grid--fit > .Grid-cell {
+    flex: 1; }
+
+  .small-Grid--full > .Grid-cell {
+    flex: 0 0 100%; }
+
+  .small-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%; }
+
+  .small-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%; }
+
+  .small-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%; } }
+/* Large screens */
+@media (min-width: 48em) {
+  .large-Grid--fit > .Grid-cell {
+    flex: 1; }
+
+  .large-Grid--full > .Grid-cell {
+    flex: 0 0 100%; }
+
+  .large-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%; }
+
+  .large-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%; }
+
+  .large-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%; } }
+
+/*# sourceMappingURL=style.css.map */

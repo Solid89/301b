@@ -34,7 +34,7 @@ $border-radius-size:14px;
 $position: relative;
 $text-align: center;
 $flex-full: 0 0 100%;
-$flex-half: 0 0 46%;
+$flex-half: 0 0 36%;
 body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
 	padding:2em;
@@ -74,14 +74,17 @@ body{
 	.zen-resources{
 		@include flex-full;
 		background: gray;}
-}//@media max-width 40em
+}//@media max-width 40em Laptop version
 @media (min-width: 40em){
 	header{
 		@include flex-full;}
+    .intro{
+        @include flex-full;
+    }
 	.summary{
 		@include flex-half;}
 	.preamble{
-		@include flex-full;}
+		@include flex-half;}
 	.supporting{
 		@include flex-full;}
 	aside{
