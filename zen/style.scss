@@ -34,8 +34,10 @@
 display:inline-block;}
 @mixin design-footer{
     flex:$flex-full;
-      background-color:blue;
+      background-color:green;
       flex-direction:$flex-row;
+			border-radius: 0  0 14px 14px;
+			text-align: center;
 }
 @mixin design-sidebar{
     position: absolute;
@@ -78,7 +80,7 @@ body{
 		@include flex-full;
 		background: gray;}
 	.summary{
-		@include flex-half;
+		@include flex-full;
 		background: gray;}
 	.preamble{
 		@include flex-full;
@@ -90,7 +92,7 @@ body{
 		@include flex-full;
 		background: gray;}
 	p {
-		@include flex-half;
+		@include flex-full;
 		background: lightgray;}
 	.design-selection{
 		@include flex-full;
@@ -103,18 +105,17 @@ body{
 		background: gray;}
 }//@media max-width 40em Laptop version
 @media (min-width: 40em){
-	
+	.intro{
+		align-items: stretch;
+	}
     #zen-intro{
         @include flex-full;
     }
-  header{
-		}
 	.summary{
 		@include flex-half;}
 	.preamble{@include flex-half; }
   .main{
-    width:85%;
-  }
+    width:85%;}
   .supporting{@include support-section;}
   .explanation{
     order:-2;
