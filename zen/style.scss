@@ -6,6 +6,8 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
 // @mixins
+/* basic elements */
+// mixins
 @mixin flex-full{
 	flex: $flex-full;
 	text-align: $text-align;
@@ -20,7 +22,6 @@
 @mixin flex-half{
 	flex: $flex-half;
 	text-align: $text-align;
-	flex-direction: column;
 	border-radius: $border-radius-size;
 	position: $position;
 	text-align: center;
@@ -28,13 +29,39 @@
 	border: .05em solid black;
 	padding: 1em;
 	margin-bottom: 1em;
-	flex-wrap: wrap;}
+	flex-wrap: wrap;
+  width:40%;
+display:inline-block;}
+@mixin design-footer{
+    flex:$flex-full;
+      background-color:blue;
+      flex-direction:$flex-row;
+}
+@mixin design-sidebar{
+    position: absolute;
+    width:15%;
+    right: 0;
+    top: 85%;
+    border: 2px solid black;
+}
+@mixin support-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    box-shadow: 0px 10px 20px -12px black;
+	border: .05em solid black;
+    border-radius: $border-radius-size;
+}
+
+  
 // variables
 $border-radius-size:14px;
 $position: relative;
 $text-align: center;
 $flex-full: 0 0 100%;
 $flex-half: 0 0 36%;
+$flex-column-support: 0 0 25%;
+$flex-row: row;
 body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
 	padding:2em;
@@ -76,21 +103,39 @@ body{
 		background: gray;}
 }//@media max-width 40em Laptop version
 @media (min-width: 40em){
-	header{
-		@include flex-full;}
-    .intro{
+	
+    #zen-intro{
         @include flex-full;
     }
+  header{
+		}
 	.summary{
 		@include flex-half;}
-	.preamble{
-		@include flex-half;}
-	.supporting{
-		@include flex-full;}
-	aside{
-		@include flex-full;}
-	p {
-		@include flex-half;}
+	.preamble{@include flex-half; }
+  .main{
+    width:85%;
+  }
+  .supporting{@include support-section;}
+  .explanation{
+    order:-2;
+    flex:$flex-column-support;
+    
+  }
+  .participation{
+    order:0;
+    flex:$flex-column-support;
+  }
+  .benefits{
+    order:-1;
+    flex:$flex-column-support;
+  }
+  .requirements{
+    align-self:center;
+    flex:0 0 50%;
+  }
+	.sidebar{ @include design-sidebar;}
+	p { }
+    footer{ @include design-footer;}
 }
 
 /* Base classes for all media */
@@ -129,4 +174,4 @@ body{
     flex: 0 0 33.3333%}
   .large-Grid--1of4 > .Grid-cell {
     flex: 0 0 25%}
-}
+  }

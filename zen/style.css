@@ -5,6 +5,7 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
+/* basic elements */
 body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 2em;
@@ -33,7 +34,6 @@ body {
   .summary {
     flex: 0 0 36%;
     text-align: center;
-    flex-direction: column;
     border-radius: 14px;
     position: relative;
     text-align: center;
@@ -42,6 +42,8 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     flex-wrap: wrap;
+    width: 40%;
+    display: inline-block;
     background: gray; }
 
   .preamble {
@@ -86,7 +88,6 @@ body {
   p {
     flex: 0 0 36%;
     text-align: center;
-    flex-direction: column;
     border-radius: 14px;
     position: relative;
     text-align: center;
@@ -95,6 +96,8 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     flex-wrap: wrap;
+    width: 40%;
+    display: inline-block;
     background: lightgray; }
 
   .design-selection {
@@ -136,19 +139,7 @@ body {
     text-decoration: none;
     background: gray; } }
 @media (min-width: 40em) {
-  header {
-    flex: 0 0 100%;
-    text-align: center;
-    border-radius: 14px;
-    position: relative;
-    text-align: center;
-    box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
-    padding: 1em;
-    margin-bottom: 1em;
-    text-decoration: none; }
-
-  .intro {
+  #zen-intro {
     flex: 0 0 100%;
     text-align: center;
     border-radius: 14px;
@@ -163,7 +154,6 @@ body {
   .summary {
     flex: 0 0 36%;
     text-align: center;
-    flex-direction: column;
     border-radius: 14px;
     position: relative;
     text-align: center;
@@ -171,12 +161,13 @@ body {
     border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 40%;
+    display: inline-block; }
 
   .preamble {
     flex: 0 0 36%;
     text-align: center;
-    flex-direction: column;
     border-radius: 14px;
     position: relative;
     text-align: center;
@@ -184,44 +175,48 @@ body {
     border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 40%;
+    display: inline-block; }
+
+  .main {
+    width: 85%; }
 
   .supporting {
-    flex: 0 0 100%;
-    text-align: center;
-    border-radius: 14px;
-    position: relative;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     box-shadow: 0px 10px 20px -12px black;
     border: .05em solid black;
-    padding: 1em;
-    margin-bottom: 1em;
-    text-decoration: none; }
+    border-radius: 14px; }
 
-  aside {
-    flex: 0 0 100%;
-    text-align: center;
-    border-radius: 14px;
-    position: relative;
-    text-align: center;
-    box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
-    padding: 1em;
-    margin-bottom: 1em;
-    text-decoration: none; }
+  .explanation {
+    order: -2;
+    flex: 0 0 25%; }
 
-  p {
-    flex: 0 0 36%;
-    text-align: center;
-    flex-direction: column;
-    border-radius: 14px;
-    position: relative;
-    text-align: center;
-    box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
-    padding: 1em;
-    margin-bottom: 1em;
-    flex-wrap: wrap; } }
+  .participation {
+    order: 0;
+    flex: 0 0 25%; }
+
+  .benefits {
+    order: -1;
+    flex: 0 0 25%; }
+
+  .requirements {
+    align-self: center;
+    flex: 0 0 50%; }
+
+  .sidebar {
+    position: absolute;
+    width: 15%;
+    right: 0;
+    top: 85%;
+    border: 2px solid black; }
+
+  footer {
+    flex: 0 0 100%;
+    background-color: blue;
+    flex-direction: row; } }
 /* Base classes for all media */
 .Grid--fit > .Grid-cell {
   flex: 1; }
