@@ -10,7 +10,7 @@ body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 1em;
   margin: auto;
-  background: #1EAAF1;
+  background: HSLA(200, 88%, 53%, 1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -26,13 +26,12 @@ body {
     border-radius: 9px;
     position: relative;
     text-align: center;
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
     background: #fff; }
   header:hover {
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   .summary {
     flex: 0 0 100%;
     text-align: center;
@@ -41,11 +40,12 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
     background: #fff; }
+  .summary:hover {
+    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   .preamble {
     flex: 0 0 100%;
     text-align: center;
@@ -54,11 +54,12 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
     background: #fff; }
+  .preamble:hover {
+    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   .supporting {
     flex: 0 0 100%;
     text-align: center;
@@ -67,11 +68,12 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
     background: #fff; }
+  .supporting:hover {
+    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   aside {
     flex: 0 0 100%;
     text-align: center;
@@ -80,11 +82,12 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
     background: #fff; }
+  aside:hover {
+    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   p {
     flex: 0 0 100%;
     text-align: center;
@@ -93,11 +96,12 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 1); }
+    background: HSLA(149, 69%, 36%, 0.75); }
+  p:hover {
+    box-shadow: 0 3px 10px HSLA(125, 51%, 24%, 0.8), 0 3px 10px HSLA(125, 51%, 24%, 1); }
   .design-selection {
     flex: 0 0 100%;
     text-align: center;
@@ -106,11 +110,10 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 1); }
+    background: HSLA(149, 69%, 36%, 0.75); }
   .design-archives {
     flex: 0 0 100%;
     text-align: center;
@@ -119,11 +122,10 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 1); }
+    background: HSLA(149, 69%, 36%, 0.75); }
   .zen-resources {
     flex: 0 0 100%;
     text-align: center;
@@ -132,11 +134,10 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: orange; } }
+    background: HSLA(45, 89%, 57%, 1); } }
 
 @media (min-width: 40em) {
   .intro {
@@ -149,7 +150,6 @@ body {
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none; }
@@ -160,7 +160,6 @@ body {
     position: relative;
     text-align: center;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     flex-wrap: wrap;
@@ -173,7 +172,6 @@ body {
     position: relative;
     text-align: center;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     padding: 1em;
     margin-bottom: 1em;
     flex-wrap: wrap;
@@ -186,7 +184,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     border-radius: 9px; }
   .explanation {
     order: -2;
@@ -194,7 +191,6 @@ body {
     padding: 5px;
     margin-top: 1%;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     border-radius: 9px; }
   .participation {
     order: 0;
@@ -202,7 +198,6 @@ body {
     padding: 5px;
     margin-top: 1%;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     border-radius: 9px; }
   .benefits {
     order: -1;
@@ -210,7 +205,6 @@ body {
     padding: 5px;
     margin-top: 1%;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     border-radius: 9px; }
   .requirements {
     align-self: center;
@@ -219,7 +213,6 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     box-shadow: 0px 10px 20px -12px black;
-    border: .05em solid black;
     border-radius: 9px; }
   .sidebar {
     position: absolute;
@@ -229,7 +222,7 @@ body {
     border: 2px solid black; }
   footer {
     flex: 0 0 100%;
-    background-color: green;
+    background-color: HSLA(149, 69%, 36%, 0.75);
     flex-direction: row;
     border-radius: 0  0 14px 14px;
     text-align: center; } }
@@ -284,25 +277,25 @@ body {
   background: #fff; }
 
 .supporting {
-  background: HSLA(149, 69%, 36%, 1); }
+  background: HSLA(149, 69%, 36%, 0.75); }
 
 aside {
   background: #fff; }
 
 .design-archives {
-  background: HSLA(149, 69%, 36%, 1); }
+  background: HSLA(149, 69%, 36%, 0.75); }
 
 .design-selection {
-  background: HSLA(149, 69%, 36%, 1); }
+  background: HSLA(149, 69%, 36%, 0.75); }
 
 .zen-resources {
-  background: HSLA(149, 69%, 36%, 1); }
+  background: HSLA(149, 69%, 36%, 0.75); }
 
 .main {
   background: #fff; }
 
 .requirements {
-  background: orange;
+  background: #fff;
   flex-grow: 1; }
 
 .explanation {
@@ -314,3 +307,42 @@ aside {
 
 .benefits {
   flex-shrink: auto; }
+
+h3 {
+  text-align: center; }
+
+@media (max-width: 40em) {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      opacity: 1/9; }
+    to {
+      opacity: 1; } }
+  .page-wrapper {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .3s; }
+  .intro {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .6s; }
+  .supporting {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .9s; } }
+
+a {
+  text-decoration: none;
+  color: HSLA(357, 68%, 53%, 1);
+  font-weight: bold; }
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  color: HSLA(45, 89%, 57%, 1); }
