@@ -14,7 +14,9 @@
 	border-radius: $border-radius-size;
 	position: $position;
 	text-align: center;
-	box-shadow: 0px 10px 20px -12px black;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
 	border: .05em solid black;
 	padding: 1em; 
 	margin-bottom: 1em;
@@ -62,18 +64,21 @@ display:inline-block;}
 }
   
 // variables
-$border-radius-size:14px;
+$border-radius-size:9px;
 $position: relative;
 $text-align: center;
 $flex-full: 0 0 100%;
 $flex-half: 0 0 36%;
 $flex-column-support: 0 0 25%;
 $flex-row: row;
+$Card1: #fff;
+$Card2: HSLA(149, 69%, 36%, 1.00);
+$Card3: orange; 
 body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
-	padding:2em;
+	padding:1em;
 	margin:auto;
-	background: #fff;
+	background: #1EAAF1;
 	// does this go here?
 	display: flex; 
 	flex-direction: row;
@@ -82,91 +87,81 @@ body{
 	align-items: flex-start;}
 @media (max-width: 40em){ // changed from min-width: 24em
 	header{
-		@include flex-full;
-		background: gray;}
+		// @include flex-full;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		flex: $flex-full;
+		text-align: $text-align;
+		border-radius: $border-radius-size;
+		position: $position;
+		text-align: center;
+		border: .05em solid black;
+		padding: 1em; 
+		margin-bottom: 1em;
+		text-decoration: none;
+		background: $Card1;}
+	header:hover{
+		box-shadow: 0 10px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
 	.summary{
 		@include flex-full;
-		background: gray;}
+		background: #fff;}
 	.preamble{
 		@include flex-full;
-		background: gray;}
+		background: $Card1;}
 	.supporting{
 		@include flex-full;
-		background: gray;}
+		background: $Card1;}
 	aside{
 		@include flex-full;
-		background: gray;}
+		background: $Card1;}
 	p {
 		@include flex-full;
-		background: lightgray;}
+		background: $Card2;}
 	.design-selection{
 		@include flex-full;
-		background: gray;}
+		background: $Card2;}
 	.design-archives{
 		@include flex-full;
-		background: gray;}
+		background: $Card2;}
 	.zen-resources{
 		@include flex-full;
-		background: gray;}
+		background: $Card3;}
 }//@media max-width 40em Laptop version
 @media (min-width: 40em){
-	.intro{
-		align-items: stretch;
-	}
-    #zen-intro{
-        @include flex-full;
-    }
-	.summary{
-		@include flex-half;}
+	.intro{ align-items: stretch;}
+  #zen-intro{ @include flex-full;}
+	.summary{ @include flex-half;}
 	.preamble{@include flex-half; }
-  .main{
-    width:85%;}
+  .main{ width:85%;}
   .supporting{@include support-section;}
   .explanation{
     order:-2;
     flex:$flex-column-support;
-      padding:5px;
-      margin-top:1%;
-    @include box-background;
-  }
+    padding:5px;
+    margin-top:1%;
+    @include box-background;}
   .participation{
     order:0;
     flex:$flex-column-support;
-      padding:5px;
-      margin-top:1%;
-    @include box-background;
-  }
+    padding:5px;
+    margin-top:1%;
+    @include box-background;}
   .benefits{
     order:-1;
     flex:$flex-column-support;
-      padding:5px;
-      margin-top:1%;
-    @include box-background;
-  }
+    padding:5px;
+    margin-top:1%;
+    @include box-background;}
   .requirements{
     align-self:center;
     flex:0 0 50%;
     padding:5px;
       margin-top:2%;
       margin-bottom:2%;
-    @include box-background;
-  }
+    @include box-background;}
 	.sidebar{ @include design-sidebar;}
-	p { }
-    footer{ @include design-footer;}
+  footer{ @include design-footer;}
 }
-
-/* Base classes for all media */
-.Grid--fit > .Grid-cell {
-  flex: 1;}
-.Grid--full > .Grid-cell {
-  flex: 0 0 100%;}
-.Grid--1of2 > .Grid-cell {
-  flex: 0 0 50%}
-.Grid--1of3 > .Grid-cell {
-  flex: 0 0 33.3333%}
-.Grid--1of4 > .Grid-cell {
-  flex: 0 0 25%}
 /* Small to medium screens */
 @media (min-width: 24em){
 	.small-Grid--fit > .Grid-cell {
@@ -179,7 +174,7 @@ body{
 		flex: 0 0 33.3333%}
 	.small-Grid--1of4 > .Grid-cell {
 		flex: 0 0 25%}
-}
+} // min-width: 24em
 /* Large screens */
 @media (min-width: 48em) {
   .large-Grid--fit > .Grid-cell {
@@ -192,4 +187,45 @@ body{
     flex: 0 0 33.3333%}
   .large-Grid--1of4 > .Grid-cell {
     flex: 0 0 25%}
-  }
+	} // min-width: 48em
+/* Base classes for all media */
+.Grid--fit > .Grid-cell {
+  flex: 1;}
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%;}
+.Grid--1of2 > .Grid-cell {
+  flex: 0 0 50%}
+.Grid--1of3 > .Grid-cell {
+  flex: 0 0 33.3333%}
+.Grid--1of4 > .Grid-cell {
+  flex: 0 0 25%}
+.summary{
+	background: $Card1;
+	align-self: stretch;}
+.preamble{
+	background: $Card1;}
+.supporting{
+	background: $Card2;}
+aside{
+	background: $Card1;}
+.design-archives{
+	background: $Card2;}
+.design-selection{
+	background: $Card2;}
+.zen-resources{
+	background: $Card2;}
+.main{
+	background: $Card1;
+	// justify-content: space-around;
+}
+.requirements{
+	background: $Card3;
+	flex-grow: 1;}
+.explanation{
+	flex-grow: 3;
+	}
+.participation{
+	flex-grow: 3;
+	min-width: 400px;}
+	.benefits{
+flex-shrink: auto;}
