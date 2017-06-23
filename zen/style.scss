@@ -148,8 +148,28 @@ body{
 		background: $Card3;}
 }//@media max-width 40em Laptop version
 @media (min-width: 40em){
+    #zen-intro{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    border:2px solid black;
+    box-shadow: 0px 10px 20px -12px 
+    }
+    header{
+    flex:0 0 100%;
+  }
+  header h1{
+    flex:0 0 100%;
+    flex-wrap:row wrap; 
+    text-align:center;
+		}
+  header h2{
+    flex:0 0 100%;
+    flex-wrap:row wrap; 
+    text-align:center;
+  }
 	.intro{ align-items: stretch;}
-  #zen-intro{ @include flex-full;}
+  
 	.summary{ @include flex-half;}
 	.preamble{@include flex-half; }
   .main{ width:85%;}
