@@ -6,6 +6,8 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
 /* basic elements */
+/*----variables----*/
+/*----mixins-------*/
 body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 1em;
@@ -21,7 +23,7 @@ body {
   header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -29,13 +31,11 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: #fff; }
-
+    background: HSLA(0, 0%, 100%, 1); }
   header:hover {
     box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
-
   .summary {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -45,13 +45,11 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: #fff; }
-
+    background: HSLA(0, 0%, 100%, 1); }
   .summary:hover {
     box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
-
   .preamble {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -61,13 +59,11 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: #fff; }
-
+    background: HSLA(149, 69%, 36%, 0.75); }
   .preamble:hover {
     box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
-
   .supporting {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -77,13 +73,11 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: #fff; }
-
+    background: HSLA(0, 0%, 100%, 1); }
   .supporting:hover {
     box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
-
   aside {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -93,13 +87,11 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: #fff; }
-
+    background: HSLA(0, 0%, 100%, 1); }
   aside:hover {
     box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
-
   p {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -110,12 +102,10 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(149, 69%, 36%, 0.75); }
-
   p:hover {
     box-shadow: 0 3px 10px HSLA(125, 51%, 24%, 0.8), 0 3px 10px HSLA(125, 51%, 24%, 1); }
-
   .design-selection {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -126,9 +116,8 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(149, 69%, 36%, 0.75); }
-
   .design-archives {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -139,9 +128,8 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(149, 69%, 36%, 0.75); }
-
   .zen-resources {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -152,32 +140,36 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(45, 89%, 57%, 1); } }
+
 @media (min-width: 40em) {
   #zen-intro {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border: 2px solid black;
-    box-shadow: 0px 10px 20px -12px; }
-
+    justify-content: space-around; }
   header {
-    flex: 0 0 100%; }
-
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(0, 0%, 100%, 1); }
   header h1 {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     flex-wrap: row wrap;
     text-align: center; }
-
   header h2 {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
     flex-wrap: row wrap;
     text-align: center; }
-
   .intro {
     align-items: stretch; }
-
   .summary {
-    flex: 0 0 36%;
+    flex: 0 0 24%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -186,11 +178,9 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     flex-wrap: wrap;
-    width: 40%;
     display: inline-block; }
-
   .preamble {
-    flex: 0 0 36%;
+    flex: 0 0 56%;
     text-align: center;
     border-radius: 9px;
     position: relative;
@@ -199,19 +189,15 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     flex-wrap: wrap;
-    width: 40%;
     display: inline-block; }
-
   .main {
     width: 85%; }
-
   .supporting {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     box-shadow: 0px 10px 20px -12px black;
     border-radius: 9px; }
-
   .explanation {
     order: -2;
     flex: 0 0 25%;
@@ -219,7 +205,6 @@ body {
     margin-top: 1%;
     box-shadow: 0px 10px 20px -12px black;
     border-radius: 9px; }
-
   .participation {
     order: 0;
     flex: 0 0 25%;
@@ -227,7 +212,6 @@ body {
     margin-top: 1%;
     box-shadow: 0px 10px 20px -12px black;
     border-radius: 9px; }
-
   .benefits {
     order: -1;
     flex: 0 0 25%;
@@ -235,7 +219,6 @@ body {
     margin-top: 1%;
     box-shadow: 0px 10px 20px -12px black;
     border-radius: 9px; }
-
   .requirements {
     align-self: center;
     flex: 0 0 50%;
@@ -244,80 +227,31 @@ body {
     margin-bottom: 2%;
     box-shadow: 0px 10px 20px -12px black;
     border-radius: 9px; }
-
   .sidebar {
     position: absolute;
     width: 15%;
     right: 0;
     top: 85%;
     border: 2px solid black; }
-
   footer {
-    flex: 0 0 100%;
-    background-color: HSLA(149, 69%, 36%, 0.75);
+    flex: 0 0 95%;
+    background-color: HSLA(0, 0%, 100%, 1);
     flex-direction: row;
     border-radius: 0  0 14px 14px;
     text-align: center; } }
-/* Small to medium screens */
-@media (min-width: 24em) {
-  .small-Grid--fit > .Grid-cell {
-    flex: 1; }
-
-  .small-Grid--full > .Grid-cell {
-    flex: 0 0 100%; }
-
-  .small-Grid--1of2 > .Grid-cell {
-    flex: 0 0 50%; }
-
-  .small-Grid--1of3 > .Grid-cell {
-    flex: 0 0 33.3333%; }
-
-  .small-Grid--1of4 > .Grid-cell {
-    flex: 0 0 25%; } }
-/* Large screens */
-@media (min-width: 48em) {
-  .large-Grid--fit > .Grid-cell {
-    flex: 1; }
-
-  .large-Grid--full > .Grid-cell {
-    flex: 0 0 100%; }
-
-  .large-Grid--1of2 > .Grid-cell {
-    flex: 0 0 50%; }
-
-  .large-Grid--1of3 > .Grid-cell {
-    flex: 0 0 33.3333%; }
-
-  .large-Grid--1of4 > .Grid-cell {
-    flex: 0 0 25%; } }
-/* Base classes for all media */
-.Grid--fit > .Grid-cell {
-  flex: 1; }
-
-.Grid--full > .Grid-cell {
-  flex: 0 0 100%; }
-
-.Grid--1of2 > .Grid-cell {
-  flex: 0 0 50%; }
-
-.Grid--1of3 > .Grid-cell {
-  flex: 0 0 33.3333%; }
-
-.Grid--1of4 > .Grid-cell {
-  flex: 0 0 25%; }
 
 .summary {
-  background: #fff;
+  background: HSLA(0, 0%, 100%, 1);
   align-self: stretch; }
 
 .preamble {
-  background: #fff; }
+  background: HSLA(0, 0%, 100%, 1); }
 
 .supporting {
   background: HSLA(149, 69%, 36%, 0.75); }
 
 aside {
-  background: #fff; }
+  background: HSLA(0, 0%, 100%, 1); }
 
 .design-archives {
   background: HSLA(149, 69%, 36%, 0.75); }
@@ -329,10 +263,10 @@ aside {
   background: HSLA(149, 69%, 36%, 0.75); }
 
 .main {
-  background: #fff; }
+  background: HSLA(0, 0%, 100%, 1); }
 
 .requirements {
-  background: #fff;
+  background: HSLA(0, 0%, 100%, 1);
   flex-grow: 1; }
 
 .explanation {
@@ -348,33 +282,44 @@ aside {
 h3 {
   text-align: center; }
 
-@media (max-width: 40em) {
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      opacity: 1/9; }
-    to {
-      opacity: 1; } }
-  .page-wrapper {
-    opacity: 0;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: .3s; }
+p {
+  background: HSLA(149, 69%, 36%, 0.75);
+  border-radius: 9px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 1em;
+  margin-bottom: 1em; }
 
-  .intro {
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: .6s; }
+    opacity: 1/9; }
+  to {
+    opacity: 1; } }
 
-  .supporting {
-    opacity: 0;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: .9s; } }
+.page-wrapper {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .3s; }
+
+.intro {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .6s; }
+
+.supporting {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .9s; }
+
 a {
   text-decoration: none;
   color: HSLA(357, 68%, 53%, 1);
@@ -382,7 +327,5 @@ a {
 
 ul {
   list-style-type: none;
-  text-align: left;
-  color: HSLA(45, 89%, 57%, 1); }
-
-/*# sourceMappingURL=style.css.map */
+  color: HSLA(45, 89%, 57%, 1);
+  text-align: left; }
