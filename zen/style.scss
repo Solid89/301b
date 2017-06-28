@@ -68,10 +68,12 @@ $paragraph: left;
 	text-align: center !important;} // why is the footer NOT centered?
 @mixin design-sidebar{
 	position: absolute;
-	width:15%;
-	right: 0;
-	top: 85%;
-	border: 2px solid black;}
+	width:25%;
+	right: 35%;
+	top: 0;
+	border: 2px solid black;
+	border-radius: 14px 14px 0px 0px;
+	background: $Card2;}
 @mixin support-section{
 	display:flex;
 	flex-wrap:wrap;
@@ -326,3 +328,15 @@ h2{
 a { @include link1;}
 a:after { @include link2;}
 a:hover:after { @include link3;}
+
+.wrapper{
+	height: 40px;
+	overflow: hidden;
+	z-index: 1000;
+
+	&:hover{
+		overflow: visible;
+		background: $Card2;
+		height: 100%;
+	}
+}
