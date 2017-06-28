@@ -12,7 +12,7 @@ body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 1em;
   margin: auto;
-  background: HSLA(200, 88%, 53%, 1);
+  background: HSLA(45, 89%, 57%, 1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,8 +32,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-  header:hover {
-    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   .summary {
     flex: 0 0 95%;
     text-align: center;
@@ -46,8 +44,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-  .summary:hover {
-    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   .preamble {
     flex: 0 0 95%;
     text-align: center;
@@ -59,9 +55,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 0.75); }
-  .preamble:hover {
-    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
+    background: HSLA(200, 88%, 53%, 1); }
   .supporting {
     flex: 0 0 95%;
     text-align: center;
@@ -74,8 +68,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-  .supporting:hover {
-    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   aside {
     flex: 0 0 95%;
     text-align: center;
@@ -88,8 +80,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-  aside:hover {
-    box-shadow: 0 5px 14px HSLA(210, 67%, 38%, 0.8), 0 5px 10px HSLA(210, 67%, 38%, 1); }
   p {
     flex: 0 0 95%;
     text-align: center;
@@ -101,9 +91,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 0.75); }
-  p:hover {
-    box-shadow: 0 3px 10px HSLA(125, 51%, 24%, 0.8), 0 3px 10px HSLA(125, 51%, 24%, 1); }
+    background: HSLA(200, 88%, 53%, 1); }
   .design-selection {
     flex: 0 0 95%;
     text-align: center;
@@ -115,7 +103,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 0.75); }
+    background: HSLA(200, 88%, 53%, 1); }
   .design-archives {
     flex: 0 0 95%;
     text-align: center;
@@ -127,7 +115,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(149, 69%, 36%, 0.75); }
+    background: HSLA(200, 88%, 53%, 1); }
   .zen-resources {
     flex: 0 0 95%;
     text-align: center;
@@ -139,7 +127,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(45, 89%, 57%, 1); } }
+    background: HSLA(149, 69%, 36%, 0.75); } }
 
 @media (min-width: 40em) {
   #zen-intro {
@@ -216,9 +204,7 @@ body {
     order: -1;
     flex: 0 0 25%;
     padding: 5px;
-    margin-top: 1%;
-    box-shadow: 0px 10px 20px -12px black;
-    border-radius: 9px; }
+    margin-top: 1%; }
   .requirements {
     align-self: center;
     flex: 0 0 50%;
@@ -248,19 +234,19 @@ body {
   background: HSLA(0, 0%, 100%, 1); }
 
 .supporting {
-  background: HSLA(149, 69%, 36%, 0.75); }
+  background: HSLA(357, 68%, 53%, 1); }
 
 aside {
   background: HSLA(0, 0%, 100%, 1); }
 
 .design-archives {
-  background: HSLA(149, 69%, 36%, 0.75); }
+  background: HSLA(200, 88%, 53%, 1); }
 
 .design-selection {
-  background: HSLA(149, 69%, 36%, 0.75); }
+  background: HSLA(200, 88%, 53%, 1); }
 
 .zen-resources {
-  background: HSLA(149, 69%, 36%, 0.75); }
+  background: HSLA(200, 88%, 53%, 1); }
 
 .main {
   background: HSLA(0, 0%, 100%, 1); }
@@ -283,7 +269,7 @@ h3 {
   text-align: center; }
 
 p {
-  background: HSLA(149, 69%, 36%, 0.75);
+  background: HSLA(200, 88%, 53%, 1);
   border-radius: 9px;
   position: relative;
   text-align: center;
@@ -322,10 +308,17 @@ p {
 
 a {
   text-decoration: none;
-  color: HSLA(357, 68%, 53%, 1);
+  color: HSLA(45, 89%, 57%, 1);
   font-weight: bold; }
 
 ul {
   list-style-type: none;
-  color: HSLA(45, 89%, 57%, 1);
+  color: HSLA(149, 69%, 36%, 0.75);
   text-align: left; }
+
+h1 {
+  font-size: 40.5pt; }
+
+h2 {
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif; }

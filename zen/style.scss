@@ -19,9 +19,9 @@ $flex-third: 0 0 34%;
 $flex-column-support: 0 0 25%;
 $flex-row: row;
 $Card1: HSLA(0, 0%, 100%, 1.00); // white
-$Card2: HSLA(149, 69%, 36%, .75); // green
-$Card3: HSLA(45, 89%, 57%, 1.00); // yellow
-$Card4: HSLA(200, 88%, 53%, 1.00); // blue
+$Card3: HSLA(149, 69%, 36%, .75); // green
+$Card4: HSLA(45, 89%, 57%, 1.00); // yellow
+$Card2: HSLA(200, 88%, 53%, 1.00); // blue
 $Card5: HSLA(357, 68%, 53%, 1.00); // red
 /*----mixins-------*/
 @mixin flex-full{
@@ -109,45 +109,45 @@ body{
 		margin-bottom: 1em;
 		text-decoration: none;
 		background: $Card1;}
-	header:hover{
-		box-shadow: 
-			0 5px 14px 	HSLA(210, 67%, 38%, .80), 
-			0 5px 10px 	HSLA(210, 67%, 38%, 1.00);}
+	// header:hover{
+	// 	box-shadow: 
+	// 		0 5px 14px 	HSLA(210, 67%, 38%, .80), 
+	// 		0 5px 10px 	HSLA(210, 67%, 38%, 1.00);}
 	.summary{
 		@include flex-full;
 		background: $Card1;}
-	.summary:hover{
-		box-shadow: 
-			0 5px 14px 	HSLA(210, 67%, 38%, .80), 
-			0 5px 10px 	HSLA(210, 67%, 38%, 1.00);}
+	// .summary:hover{
+	// 	box-shadow: 
+	// 		0 5px 14px 	HSLA(210, 67%, 38%, .80), 
+	// 		0 5px 10px 	HSLA(210, 67%, 38%, 1.00);}
 	.preamble{
 		@include flex-full;
 		background: $Card2;}
-	.preamble:hover{
-		box-shadow: 
-			0 5px 14px HSLA(210, 67%, 38%, .80), 
-			0 5px 10px HSLA(210, 67%, 38%, 1.00);}
+	// .preamble:hover{
+	// 	box-shadow: 
+	// 		0 5px 14px HSLA(210, 67%, 38%, .80), 
+	// 		0 5px 10px HSLA(210, 67%, 38%, 1.00);}
 	.supporting{
 		@include flex-full;
 		background: $Card1;}
-	.supporting:hover{
-		box-shadow: 
-			0 5px 14px HSLA(210, 67%, 38%, .80), 
-			0 5px 10px HSLA(210, 67%, 38%, 1.00);}
+	// .supporting:hover{
+	// 	box-shadow: 
+	// 		0 5px 14px HSLA(210, 67%, 38%, .80), 
+	// 		0 5px 10px HSLA(210, 67%, 38%, 1.00);}
 	aside{
 		@include flex-full;
 		background: $Card1;}
-	aside:hover{
-		box-shadow: 
-			0 5px 14px HSLA(210, 67%, 38%, .80), 
-			0 5px 10px HSLA(210, 67%, 38%, 1.00);}
+	// aside:hover{
+	// 	box-shadow: 
+	// 		0 5px 14px HSLA(210, 67%, 38%, .80), 
+	// 		0 5px 10px HSLA(210, 67%, 38%, 1.00);}
 	p {
 		@include flex-full;
 		background: $Card2;}
-	p:hover{
-		box-shadow: 
-			0 3px 10px HSLA(125, 51%, 24%, .80), 
-			0 3px 10px HSLA(125, 51%, 24%, 1.00);}
+	// p:hover{
+	// 	box-shadow: 
+	// 		0 3px 10px HSLA(125, 51%, 24%, .80), 
+	// 		0 3px 10px HSLA(125, 51%, 24%, 1.00);}
 	.design-selection{
 		@include flex-full;
 		background: $Card2;}
@@ -211,8 +211,7 @@ body{
     order:-1;
     flex:$flex-column-support;
     padding:5px;
-    margin-top:1%;
-    @include box-background;}
+    margin-top:1%;}
   .requirements{
     align-self:center;
     flex:0 0 50%;
@@ -227,7 +226,7 @@ body{
 	background: $Card1;
 	align-self: stretch;}
 .preamble{	background: $Card1;}
-.supporting{	background: $Card2;}
+.supporting{	background: $Card5;}
  aside{	background: $Card1;}
 .design-archives{	background: $Card2;}
 .design-selection{	background: $Card2;}
@@ -280,10 +279,17 @@ p{
 		animation-delay: .9s;}
 	a{	
 		text-decoration: none;
-		color: $Card5; // actual link
+		color: $Card4; // actual link
 		// font-style: italic;
 		font-weight: bold;}
 	ul{	
 		list-style-type: none;
 		color: $Card3;  // the word "by"
 		text-align: left;}
+	h1{
+		font-size: 40.5pt;
+	}
+	h2{
+		font-size: 15pt;
+		font-family: Arial, Helvetica, sans-serif;
+	}
