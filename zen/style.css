@@ -169,7 +169,7 @@ body {
   .intro {
     align-items: stretch; }
   .summary {
-    flex: 0 0 24%;
+    flex: 0 0 34%;
     text-align: center;
     border-radius: 9px;
     position: relative;
