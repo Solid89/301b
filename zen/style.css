@@ -234,7 +234,19 @@ body {
     background-color: HSLA(0, 0%, 100%, 1);
     flex-direction: row;
     border-radius: 0  0 14px 14px;
-    text-align: center !important; } }
+    text-align: center !important; }
+  .wrapper {
+    height: 40px;
+    overflow: hidden;
+    z-index: 1000; }
+    .wrapper:hover {
+      overflow: visible;
+      background: HSLA(200, 88%, 53%, 1);
+      height: 100%;
+      transition: .4s ease .25s;
+      transition-property: height;
+      transition-duration: .5s;
+      transition-delay: .1s; } }
 
 .summary {
   background: HSLA(0, 0%, 100%, 1);
@@ -371,12 +383,3 @@ a:after {
 a:hover:after {
   width: 100%;
   left: 0; }
-
-.wrapper {
-  height: 40px;
-  overflow: hidden;
-  z-index: 1000; }
-  .wrapper:hover {
-    overflow: visible;
-    background: HSLA(200, 88%, 53%, 1);
-    height: 100%; }
