@@ -5,335 +5,470 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
-// @mixins
 /* basic elements */
-// mixins
-
 /*----variables----*/
-$border-radius-size:9px;
-$position: relative;
-$text-align: center;
-$flex-full: 0 0 95%;
-$flex-half: 0 0 56%;
-$flex-third: 0 0 34%;
-$flex-column-support: 0 0 25%;
-$flex-row: row;
-$Card1: HSLA(0, 0%, 100%, 1.00); // white
-$Card3: HSLA(149, 69%, 36%, .75); // green
-$Card4: HSLA(45, 89%, 57%, 1.00); // yellow
-$Card2: HSLA(200, 88%, 53%, 1.00); // blue
-$Card5: HSLA(357, 68%, 53%, 1.00); // red
-$paragraph: left;
 /*----mixins-------*/
-@mixin flex-full{
-	flex: $flex-full;
-	text-align: $text-align;
-	border-radius: $border-radius-size;
-	position: $position;
-	text-align: $paragraph;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	// border: .05em solid black; // No border is needed
-	padding: 1em; 
-	margin-bottom: 1em;
-	text-decoration: none;}
-@mixin flex-half{
-	flex: $flex-half;
-	text-align: $text-align;
-	border-radius: $border-radius-size;
-	position: $position;
-	text-align: $paragraph;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	padding: 1em;
-	margin-bottom: 1em;
-	flex-wrap: wrap;
-  // width:90%;
-	display:inline-block;}
-@mixin flex-third{
-	flex: $flex-third;
-	text-align: $text-align;
-	border-radius: $border-radius-size;
-	position: $position;
-	text-align: $paragraph;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	padding: 1em;
-	margin-bottom: 1em;
-	flex-wrap: wrap;
-	display:inline-block;}
-@mixin design-footer{
-	flex:$flex-full;
-	background-color:$Card1;
-	flex-direction:$flex-row;
-	border-radius: 0  0 14px 14px;
-	text-align: center !important;} // why is the footer NOT centered?
-@mixin design-sidebar{
-	position: absolute;
-	width:25%;
-	right: 35%;
-	top: 0;
-	border: 2px solid black;
-	border-radius: 14px 14px 0px 0px;
-	background: $Card2;}
-@mixin support-section{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	// border: .05em solid black;
-  border-radius: $border-radius-size;}
-@mixin box-background{
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	// border: .05em solid black;
-  border-radius: $border-radius-size;} 
-@mixin link1{
-text-decoration: none;
-	color: $Card4;
-	position: relative;}
-@mixin link2{
-position: absolute;
-content: "";
-width: 0;
-left: 0;
-bottom: -1px;
-height: 2px;
-background-color: #333;
-transition: all 0.3s linear;}
-@mixin link3{
-width: 100%;
-left: 0;}
-body{
-	font: 15px/1.5 Arial, Helvetica, sans-serif;
-	padding:1em;
-	margin:auto;
-	background: $Card4;
-	// does this go here?
-	display: flex; 
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;}
-@media (max-width: 40em){ // changed from min-width: 24em
-	header{
-		// @include flex-full;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		flex: $flex-full;
-		text-align: $text-align;
-		border-radius: $border-radius-size;
-		position: $position;
-		text-align: center;
-		margin-bottom: 1em;
-		text-decoration: none;
-		background: $Card1;}
-	// header:hover{
-	// 	box-shadow: 
-	// 		0 5px 14px 	HSLA(210, 67%, 38%, .80), 
-	// 		0 5px 10px 	HSLA(210, 67%, 38%, 1.00);}
-	.summary{
-		@include flex-full;
-		background: $Card1;}
-	// .summary:hover{
-	// 	box-shadow: 
-	// 		0 5px 14px 	HSLA(210, 67%, 38%, .80), 
-	// 		0 5px 10px 	HSLA(210, 67%, 38%, 1.00);}
-	.preamble{
-		@include flex-full;
-		background: $Card2;}
-	// .preamble:hover{
-	// 	box-shadow: 
-	// 		0 5px 14px HSLA(210, 67%, 38%, .80), 
-	// 		0 5px 10px HSLA(210, 67%, 38%, 1.00);}
-	.supporting{
-		@include flex-full;
-		background: $Card1;}
-	// .supporting:hover{
-	// 	box-shadow: 
-	// 		0 5px 14px HSLA(210, 67%, 38%, .80), 
-	// 		0 5px 10px HSLA(210, 67%, 38%, 1.00);}
-	aside{
-		@include flex-full;
-		background: $Card1;}
-	// aside:hover{
-	// 	box-shadow: 
-	// 		0 5px 14px HSLA(210, 67%, 38%, .80), 
-	// 		0 5px 10px HSLA(210, 67%, 38%, 1.00);}
-	p {
-		@include flex-full;
-		background: $Card2;}
-	// p:hover{
-	// 	box-shadow: 
-	// 		0 3px 10px HSLA(125, 51%, 24%, .80), 
-	// 		0 3px 10px HSLA(125, 51%, 24%, 1.00);}
-	.design-selection{
-		@include flex-full;
-		background: $Card2;}
-	.design-archives{
-		@include flex-full;
-		background: $Card2;}
-	.zen-resources{
-		@include flex-full;
-		background: $Card3;}
-	header h1{
-		margin-bottom: -.1em;	}
-	header h2{
-		margin-top: -1em;
-		padding-bottom: .5em;	}
-}//@media max-width 40em Laptop version
-@media (min-width: 40em){
-  #zen-intro{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    // border:2px solid black;
-    // box-shadow: 0px 10px 20px -12px 
-    }
-  header{
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		flex: $flex-full;
-		text-align: $text-align;
-		border-radius: $border-radius-size;
-		position: $position;
-		text-align: center;
-		padding: 1em; 
-		margin-bottom: 1em;
-		text-decoration: none;
-		background: $Card1;  }
-  header h1{
-    flex: $flex-full;
-    flex-wrap: row wrap; 
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  background: HSLA(45, 89%, 57%, 1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 40em) {
+  header {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    flex: 0 0 95%;
     text-align: center;
-		margin-top: -.03em;		}
-  header h2{
-    flex: $flex-full;
-    flex-wrap:row wrap; 
-    text-align:center;
-		margin-top: -3em;  }
-	.intro{ align-items: stretch;}
-	.summary{ @include flex-third;} // this needs to be 1/3
-	.preamble{ @include flex-half; } // this needs to be 2/3 due to content
-  .main{ width:85%;}
-  .supporting{ @include support-section;}
-  .explanation{
-    order:-2;
-    flex:$flex-column-support;
-    padding:5px;
-    margin-top:1%;
-    @include box-background;}
-  .participation{
-    order:0;
-    flex:$flex-column-support;
-    padding:5px;
-    margin-top:1%;
-    @include box-background;}
-  .benefits{
-    order:-1;
-    flex:$flex-column-support;
-    padding:5px;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		border-radius: 14px  14px 14px 14px;
-    margin-top:1%;}
-  .requirements{
-    align-self:$paragraph;
-    flex:0 0 50%;
-    padding:5px;
-    margin-top:2%;
-    margin-bottom:2%;
-    @include box-background;}
-	.sidebar{ @include design-sidebar;}
-  footer{ @include design-footer;}
-	.wrapper{
-		height: 40px;
-		overflow: hidden;
-		z-index: 1000;
-		&:hover{
-			overflow: visible;
-			background: $Card2;
-			height: 100%;
-			transition: .4s ease .25s;
-			transition-property: height;
-			transition-duration: .5s;
-			transition-delay: .1s;}
-	}
-}// media min width 40em
-.summary{
-	background: $Card1;
-	align-self: stretch;}
-.preamble{	background: $Card1;}
-.supporting{	background: $Card5;}
- aside{	background: $Card1;}
-.design-archives{	background: $Card2;}
-.design-selection{	background: $Card2;}
-.zen-resources{	background: $Card2;}
-// justify-content: space-around;
-.main{	background: $Card1;}
-.requirements{
-	background: $Card1;
-	flex-grow: 1;}
-.explanation{
-	flex-grow: 3;}
-.participation{
-	flex-grow: 3;
-	min-width: 400px;}
-.benefits{
-	flex-shrink: auto;}
-h3{
-	text-align: center;}
-p{
-	background: $Card2;
-	border-radius: $border-radius-size;
-	position: $position;
-	text-align: $paragraph;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	// border: .05em solid black; // No border is needed
-	padding: 1em; 
-	margin-bottom: 1em;}
-	@keyframes fadeIn { // are all main sections (white bg) fading in?
-		from {opacity: 0; opacity: 1/9;} 
-		to { opacity: 1}}
-.page-wrapper { 
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
-	animation-delay: .3s;}
-.intro { 
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
-	animation-delay: .6s;}
-.supporting{
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
-	animation-delay: .9s;}
-a{	
-	text-decoration: none;
-	color: $Card4; // actual link
-	// font-style: italic;
-	font-weight: bold;
-	position: relative;
-}
-ul{	
-	list-style-type: none;
-	color: black;  // the word "by"
-	text-align: left;}
-h1{
-	font-size: 40.5pt;
-}
-h2{
-	font-size: 15pt;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.zen-validate-html { @include link1;}
-.zen-validate-html:after { @include link2;}
-.zen-validate-html:hover:after { @include link3;}
-// do above for specific or below for all links
-a { @include link1;}
-a:after { @include link2;}
-a:hover:after { @include link3;}
+    border-radius: 9px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(0, 0%, 100%, 1);
+  }
 
+  .summary {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(0, 0%, 100%, 1);
+  }
 
+  .preamble {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(200, 88%, 53%, 1);
+  }
+
+  .supporting {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(0, 0%, 100%, 1);
+  }
+
+  aside {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(0, 0%, 100%, 1);
+  }
+
+  p {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(200, 88%, 53%, 1);
+  }
+
+  .design-selection {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(200, 88%, 53%, 1);
+  }
+
+  .design-archives {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(200, 88%, 53%, 1);
+  }
+
+  .zen-resources {
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(149, 69%, 36%, 0.75);
+  }
+
+  header h1 {
+    margin-bottom: -.1em;
+  }
+
+  header h2 {
+    margin-top: -1em;
+    padding-bottom: .5em;
+  }
+}
+@media (min-width: 40em) {
+  #zen-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3em;
+  }
+
+  header {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    flex: 0 0 95%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    background: HSLA(0, 0%, 100%, 1);
+  }
+
+  header h1 {
+    flex: 0 0 95%;
+    flex-wrap: row wrap;
+    text-align: center;
+    margin-top: -.03em;
+  }
+
+  header h2 {
+    flex: 0 0 95%;
+    flex-wrap: row wrap;
+    text-align: center;
+    margin-top: -3em;
+  }
+
+  .intro {
+    align-items: stretch;
+  }
+
+  .summary {
+    flex: 0 0 34%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    display: inline-block;
+  }
+
+  .preamble {
+    flex: 0 0 56%;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    display: inline-block;
+  }
+
+  .main {
+    width: 94vw;
+    margin: 0 auto;
+  }
+
+  .supporting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 9px;
+  }
+
+  .explanation {
+    order: -2;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 9px;
+  }
+
+  .participation {
+    order: 0;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 9px;
+  }
+
+  .benefits {
+    order: -1;
+    flex: 0 0 25%;
+    padding: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 14px  14px 14px 14px;
+    margin-top: 1%;
+  }
+
+  .requirements {
+    align-self: left;
+    flex: 0 0 50%;
+    padding: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 9px;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 25%;
+    left: 71vw;
+    top: 0;
+    border: 2px solid black;
+    border-radius: 0px 0px 14px 14px;
+    background: HSLA(200, 88%, 53%, 1);
+    transform: scale(1, -1);
+    transform: rotate(360deg);
+  }
+
+  footer {
+    flex: 0 0 95%;
+    background-color: HSLA(0, 0%, 100%, 1);
+    flex-direction: row;
+    border-radius: 0  0 14px 14px;
+    text-align: center !important;
+  }
+
+  .wrapper {
+    height: 40px;
+    overflow: hidden;
+    z-index: 1000;
+    border-radius: 0px 2px 14px 14px;
+  }
+  .wrapper:hover {
+    overflow: visible;
+    background: HSLA(200, 88%, 53%, 1);
+    height: 100%;
+    transition: .4s ease .25s;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-delay: .1s;
+  }
+}
+.summary {
+  background: HSLA(0, 0%, 100%, 1);
+  align-self: stretch;
+}
+
+.preamble {
+  background: HSLA(0, 0%, 100%, 1);
+}
+
+.supporting {
+  background: HSLA(357, 68%, 53%, 1);
+}
+
+aside {
+  background: HSLA(0, 0%, 100%, 1);
+}
+
+.design-archives {
+  background: HSLA(200, 88%, 53%, 1);
+}
+
+.design-selection {
+  background: HSLA(200, 88%, 53%, 1);
+}
+
+.zen-resources {
+  background: HSLA(200, 88%, 53%, 1);
+}
+
+.main {
+  background: HSLA(0, 0%, 100%, 1);
+}
+
+.requirements {
+  background: HSLA(0, 0%, 100%, 1);
+  flex-grow: 1;
+}
+
+.explanation {
+  flex-grow: 3;
+}
+
+.participation {
+  flex-grow: 3;
+  min-width: 400px;
+}
+
+.benefits {
+  flex-shrink: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  background: HSLA(200, 88%, 53%, 1);
+  border-radius: 9px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1/9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.page-wrapper {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .3s;
+}
+
+.intro {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .6s;
+}
+
+.supporting {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .9s;
+}
+
+a {
+  text-decoration: none;
+  color: HSLA(45, 89%, 57%, 1);
+  font-weight: bold;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+  text-align: left;
+}
+
+h1 {
+  font-size: 40.5pt;
+}
+
+h2 {
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zen-validate-html {
+  text-decoration: none;
+  color: HSLA(45, 89%, 57%, 1);
+  position: relative;
+}
+
+.zen-validate-html:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s linear;
+}
+
+.zen-validate-html:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: HSLA(45, 89%, 57%, 1);
+  position: relative;
+}
+
+a:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s linear;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
