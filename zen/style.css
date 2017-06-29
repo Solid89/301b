@@ -12,7 +12,7 @@ body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 1em;
   margin: 0 auto;
-  background: HSLA(45, 89%, 57%, 1);
+  background: HSLA(0, 0%, 95%, 1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,7 +31,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-
   .summary {
     flex: 0 0 95%;
     text-align: center;
@@ -44,7 +43,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-
   .preamble {
     flex: 0 0 95%;
     text-align: center;
@@ -57,7 +55,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(200, 88%, 53%, 1); }
-
   .supporting {
     flex: 0 0 95%;
     text-align: center;
@@ -69,8 +66,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    background: HSLA(0, 0%, 100%, 1); }
-
+    background: transparent; }
   aside {
     flex: 0 0 95%;
     text-align: center;
@@ -83,7 +79,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-
   p {
     flex: 0 0 95%;
     text-align: center;
@@ -96,7 +91,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(200, 88%, 53%, 1); }
-
   .design-selection {
     flex: 0 0 95%;
     text-align: center;
@@ -109,7 +103,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(200, 88%, 53%, 1); }
-
   .design-archives {
     flex: 0 0 95%;
     text-align: center;
@@ -122,7 +115,6 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(200, 88%, 53%, 1); }
-
   .zen-resources {
     flex: 0 0 95%;
     text-align: center;
@@ -135,20 +127,18 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(149, 69%, 36%, 0.75); }
-
   header h1 {
     margin-bottom: -.1em; }
-
   header h2 {
     margin-top: -1em;
     padding-bottom: .5em; } }
+
 @media (min-width: 40em) {
   #zen-intro {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 3em; }
-
   header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -161,22 +151,18 @@ body {
     margin-bottom: 1em;
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
-
   header h1 {
     flex: 0 0 95%;
     flex-wrap: row wrap;
     text-align: center;
     margin-top: -.03em; }
-
   header h2 {
     flex: 0 0 95%;
     flex-wrap: row wrap;
     text-align: center;
     margin-top: -3em; }
-
   .intro {
     align-items: stretch; }
-
   .summary {
     flex: 0 0 34%;
     text-align: center;
@@ -188,7 +174,6 @@ body {
     margin-bottom: 1em;
     flex-wrap: wrap;
     display: inline-block; }
-
   .preamble {
     flex: 0 0 56%;
     text-align: center;
@@ -200,19 +185,15 @@ body {
     margin-bottom: 1em;
     flex-wrap: wrap;
     display: inline-block; }
-
   .main {
-    width: 94vw;
+    width: 95vw;
     margin: 0 auto; }
-
   .supporting {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-content: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 9px; }
-
   .explanation {
     order: -2;
     flex: 0 0 25%;
@@ -220,23 +201,22 @@ body {
     margin-top: 1%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 9px; }
-
   .participation {
     order: 0;
     flex: 0 0 25%;
     padding: 5px;
     margin-top: 1%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 9px; }
-
+    border-radius: 9px;
+    background: HSLA(0, 0%, 100%, 1); }
   .benefits {
     order: -1;
     flex: 0 0 25%;
     padding: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 14px  14px 14px 14px;
-    margin-top: 1%; }
-
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1); }
   .requirements {
     align-self: left;
     flex: 0 0 50%;
@@ -245,7 +225,6 @@ body {
     margin-bottom: 2%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 9px; }
-
   .sidebar {
     position: fixed;
     width: 25%;
@@ -256,28 +235,26 @@ body {
     background: HSLA(200, 88%, 53%, 1);
     transform: scale(1, -1);
     transform: rotate(360deg); }
-
   footer {
     flex: 0 0 95%;
-    background-color: HSLA(0, 0%, 100%, 1);
+    background-color: transparent;
     flex-direction: row;
     border-radius: 0  0 14px 14px;
     text-align: center !important; }
-
   .wrapper {
     height: 40px;
     overflow: hidden;
     z-index: 1000;
     border-radius: 0px 2px 14px 14px; }
+    .wrapper:hover {
+      overflow: visible;
+      background: HSLA(200, 88%, 53%, 1);
+      height: 100%;
+      transition: .4s ease .25s;
+      transition-property: height;
+      transition-duration: .5s;
+      transition-delay: .1s; } }
 
-  .wrapper:hover {
-    overflow: visible;
-    background: HSLA(200, 88%, 53%, 1);
-    height: 100%;
-    transition: .4s ease .25s;
-    transition-property: height;
-    transition-duration: .5s;
-    transition-delay: .1s; } }
 .summary {
   background: HSLA(0, 0%, 100%, 1);
   align-self: stretch; }
@@ -286,7 +263,7 @@ body {
   background: HSLA(0, 0%, 100%, 1); }
 
 .supporting {
-  background: HSLA(357, 68%, 53%, 1); }
+  background: transparent; }
 
 aside {
   background: HSLA(0, 0%, 100%, 1); }
@@ -301,14 +278,15 @@ aside {
   background: HSLA(200, 88%, 53%, 1); }
 
 .main {
-  background: HSLA(0, 0%, 100%, 1); }
+  background: transparent; }
 
 .requirements {
   background: HSLA(0, 0%, 100%, 1);
   flex-grow: 1; }
 
 .explanation {
-  flex-grow: 3; }
+  flex-grow: 3;
+  background: HSLA(0, 0%, 100%, 1); }
 
 .participation {
   flex-grow: 3;
@@ -336,6 +314,7 @@ p {
     opacity: 1/9; }
   to {
     opacity: 1; } }
+
 .page-wrapper {
   opacity: 0;
   animation: fadeIn ease-in 1;
@@ -412,5 +391,3 @@ a:after {
 a:hover:after {
   width: 100%;
   left: 0; }
-
-/*# sourceMappingURL=style.css.map */
