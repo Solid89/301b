@@ -1,0 +1,12 @@
+/**************************************
+ * Animations
+ **************************************/
+@keyframes fadeIn { // are all main sections (white bg) fading in?
+		from {
+      opacity: 0; opacity: 1/9;
+    }
+
+		to {
+      opacity: 1
+    }
+}

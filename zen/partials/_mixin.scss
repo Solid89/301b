@@ -1,0 +1,110 @@
+/**************************************
+ * Layout Mixins
+ **************************************/
+@mixin flex-full{
+  display: flex;
+  width: 100%;
+	text-align: $text-align;
+	border-radius: $border-radius-size;
+	position: $position;
+	text-align: $paragraph;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	padding: 1em;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+@mixin flex-half{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	text-align: $text-align;
+	border-radius: $border-radius-size;
+	position: $position;
+	text-align: $paragraph;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+@mixin flex-third{
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+	text-align: $text-align;
+	border-radius: $border-radius-size;
+	position: $position;
+	text-align: $paragraph;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+@mixin design-footer{
+	flex:$flex-full;
+	background-color:transparent;
+	flex-direction:$flex-row;
+	border-radius: 0  0 14px 14px;
+	text-align: center !important;
+}
+
+
+@mixin design-sidebar{
+	position: fixed;
+	width:25%;
+	left: 71vw;
+	top: 0;
+	border: 2px solid black;
+	border-radius: 0px 0px 14px 14px;
+	background: $Card2;
+  transform: scale(1, -1);
+  transform:rotate(360deg);
+}
+
+@mixin support-section{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+  justify-content:center;
+	// box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	// border: .05em solid black;
+  border-radius: $border-radius-size;
+}
+
+
+/**************************************
+ * Style Mixins
+ **************************************/
+@mixin box-background{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: $border-radius-size;
+}
+
+@mixin link1{
+  text-decoration: none;
+	color: $Card4;
+	position: relative;
+}
+
+@mixin link2{
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s linear;
+}
+
+
+
+//TODO: What is the point of this mixin?
+// This is almost as much work as just writing out the rules.
+// Brother Blaylock
+@mixin link3{
+  width: 100%;
+  left: 0;
+}
