@@ -45,6 +45,12 @@
     display: flex;
 	flex-wrap: wrap;
 }
+@mixin body-cards{
+        flex:$flex-column-support;
+        padding:5px;
+        margin-top:1%;
+        background: $Card1;
+    }
 @mixin design-footer{
 	flex:$flex-full;
 	background-color:transparent;

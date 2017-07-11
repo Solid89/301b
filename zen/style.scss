@@ -237,35 +237,26 @@ a:hover:after {
 
   .explanation{
     order:-2;
-    flex:$flex-column-support;
-    padding:5px;
-    margin-top:1%;
+    @include body-cards;
     @include box-background;
   }
-
+    
   .participation{
     order:0;
-    flex:$flex-column-support;
-    padding:5px;
-    margin-top:1%;
+    @include body-cards;
     @include box-background;
-    background: $Card1;
   }
 
   .benefits{
     order:-1;
-    flex:$flex-column-support;
-    padding:5px;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin-top:1%;
-    background: $Card1
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        @include body-cards;
   }
 
   .requirements{
    @include flex-wrapping;
     justify-content: space-between;
     align-self:$paragraph;
-
     padding:20px;
     margin-top:2%;
     margin-bottom:2%;
