@@ -198,8 +198,6 @@ a:hover:after {
     padding: 5px;
     margin-top: 1%;
     background: HSLA(0, 0%, 100%, 1); }
-  body .intro {
-    align-items: stretch; }
   body .explanation {
     order: -2;
     flex: 0 0 25%;
@@ -214,6 +212,8 @@ a:hover:after {
     flex-direction: row;
     border-radius: 0  0 14px 14px;
     text-align: center !important; }
+  body .intro {
+    align-items: stretch; }
   body .main {
     width: 95vw;
     margin: 0 auto; }
