@@ -98,21 +98,21 @@ p {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: .6s;
   animation-delay: .3s; }
 
 .intro {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: .6s;
   animation-delay: .6s; }
 
 .supporting {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: .6s;
   animation-delay: .9s; }
 
 a {
