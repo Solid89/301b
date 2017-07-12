@@ -191,10 +191,51 @@ a:hover:after {
     text-decoration: none;
     background: HSLA(0, 0%, 100%, 1); }
 
-  .intro {
+  body .benefits {
+    order: -1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1); }
+  body .intro {
     align-items: stretch; }
-
-  .summary {
+  body .explanation {
+    order: -2;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0px; }
+  body footer {
+    flex: 0 0 95%;
+    background-color: transparent;
+    flex-direction: row;
+    border-radius: 0  0 14px 14px;
+    text-align: center !important; }
+  body .main {
+    width: 95vw;
+    margin: 0 auto; }
+  body .participation {
+    order: 0;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0px; }
+  body .sidebar {
+    position: fixed;
+    width: 25%;
+    left: 71vw;
+    top: 0;
+    border: 2px solid black;
+    border-radius: 0px 0px 14px 14px;
+    background: HSLA(200, 88%, 53%, 1);
+    transform: scale(1, -1);
+    transform: rotate(360deg); }
+  body .summary {
     display: flex;
     flex-wrap: wrap;
     width: 33%;
@@ -205,6 +246,12 @@ a:hover:after {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     padding: 1em;
     margin-bottom: 1em; }
+  body .supporting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    border-radius: 0px; }
 
   .preamble {
     width: 50%;
@@ -225,53 +272,16 @@ a:hover:after {
       box-sizing: border-box;
       width: 32%; }
 
-  .main {
-    width: 95vw;
-    margin: 0 auto; }
-
-  .supporting {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-content: center;
-    border-radius: 0px; }
-
-  .explanation {
-    order: -2;
-    flex: 0 0 25%;
-    padding: 5px;
-    margin-top: 1%;
-    background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 0px; }
-
-  .participation {
-    order: 0;
-    flex: 0 0 25%;
-    padding: 5px;
-    margin-top: 1%;
-    background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 0px; }
-
-  .benefits {
-    order: -1;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    flex: 0 0 25%;
-    padding: 5px;
-    margin-top: 1%;
-    background: HSLA(0, 0%, 100%, 1); }
-
   .requirements {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0px;
     justify-content: space-between;
     align-self: left;
     padding: 20px;
     margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 0px; }
+    margin-bottom: 2%; }
     .requirements > h3,
     .requirements > p[role="contentinfo"] {
       width: 100%;
@@ -279,24 +289,6 @@ a:hover:after {
     .requirements > p {
       width: 49%;
       box-sizing: border-box; }
-
-  .sidebar {
-    position: fixed;
-    width: 25%;
-    left: 71vw;
-    top: 0;
-    border: 2px solid black;
-    border-radius: 0px 0px 14px 14px;
-    background: HSLA(200, 88%, 53%, 1);
-    transform: scale(1, -1);
-    transform: rotate(360deg); }
-
-  footer {
-    flex: 0 0 95%;
-    background-color: transparent;
-    flex-direction: row;
-    border-radius: 0  0 14px 14px;
-    text-align: center !important; }
 
   .wrapper {
     height: 40px;
