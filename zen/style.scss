@@ -179,11 +179,15 @@ a:after {
 a:hover:after {
   @include link3;
 }
-
+@media all and (min-width: 200px) and (max-width: 639px){
+  .summary, .preamble, .explanation, .requirements, .sidebar {
+    background: transparent;
+  }
+}
 
 //laptop version
 
-@media (min-width: 640px){
+@media all and (min-width: 640px) and (max-width: 1400px){
     
     body{
         
