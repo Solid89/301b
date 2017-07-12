@@ -256,6 +256,29 @@ a:hover:after {
           width: 32%;
         }
       }
+  .explanation{
+        > h3 {
+          box-sizing: border-box;
+          width: $full-width;
+        }
+        > p {
+          box-sizing: border-box;
+          width: 90%;
+          margin: 10px auto;
+        }
+      }
+  .benefits{
+    
+    > h3 {
+      box-sizing: border-box;
+      width: $full-width;
+    }
+    > p {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
     .requirements{
    @include flex-wrapping;
    @include box-background;  
