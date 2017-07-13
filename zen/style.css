@@ -26,7 +26,6 @@ header {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   text-align: center;
-  border-radius: 0px;
   position: relative;
   text-align: center;
   margin-bottom: 16px;
@@ -65,14 +64,14 @@ aside {
 
 .requirements {
   background: HSLA(0, 0%, 100%, 1);
-  flex-grow: 1; }
+  width: 100%; }
 
 .explanation {
-  flex-grow: 3;
+  width: 100%;
   background: HSLA(0, 0%, 100%, 1); }
 
 .participation {
-  flex-grow: 3;
+  width: 100%;
   min-width: 400px; }
 
 .benefits {
@@ -83,7 +82,6 @@ h3 {
 
 p {
   background: HSLA(200, 88%, 53%, 1);
-  border-radius: 0px;
   position: relative;
   text-align: left;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -188,13 +186,11 @@ a:hover:after {
     padding: 5px;
     margin-top: 1%;
     background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 0px; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   body footer {
     flex: 0 0 95%;
     background-color: transparent;
     flex-direction: row;
-    border-radius: 0  0 14px 14px;
     text-align: center !important; }
   body header {
     flex: 0 0 95%;
@@ -210,8 +206,7 @@ a:hover:after {
     padding: 5px;
     margin-top: 1%;
     background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 0px; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   body .sidebar {
     position: fixed;
     width: 25%;
@@ -231,8 +226,7 @@ a:hover:after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    justify-content: center;
-    border-radius: 0px; }
+    justify-content: center; }
   body #zen-intro {
     display: flex;
     flex-wrap: wrap;
@@ -278,7 +272,6 @@ a:hover:after {
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 0px;
     justify-content: space-between;
     align-self: left;
     padding: 20px;
