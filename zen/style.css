@@ -20,10 +20,7 @@ body {
   margin: 0 auto;
   background: HSLA(0, 0%, 95%, 1);
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap; }
 
 header {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -174,9 +171,9 @@ a:hover:after {
 @media all and (min-width: 200px) and (max-width: 639px) {
   .summary, .preamble, .explanation, .requirements, .sidebar {
     background: transparent; }
+
   footer {
     text-align: center; } }
-
 @media all and (min-width: 640px) and (max-width: 1400px) {
   body .benefits {
     order: -1;
@@ -226,16 +223,10 @@ a:hover:after {
     transform: scale(1, -1);
     transform: rotate(360deg); }
   body .summary {
-    display: flex;
-    flex-wrap: wrap;
-    width: 33%;
-    text-align: center;
-    border-radius: 0px;
-    position: relative;
-    text-align: left;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    padding: 1em;
-    margin-bottom: 1em; }
+    flex: 0 0 95%;
+    margin-bottom: 16px; }
+  body .summary p {
+    text-align: center; }
   body .supporting {
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +238,7 @@ a:hover:after {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 48px; }
+
   .preamble {
     width: 50%;
     display: flex;
@@ -265,6 +257,7 @@ a:hover:after {
     .preamble > p {
       box-sizing: border-box;
       width: 32%; }
+
   .explanation > h3 {
     box-sizing: border-box;
     width: 100%; }
@@ -272,6 +265,7 @@ a:hover:after {
     box-sizing: border-box;
     width: 90%;
     margin: 10px auto; }
+
   .benefits > h3 {
     box-sizing: border-box;
     width: 100%; }
@@ -279,6 +273,7 @@ a:hover:after {
     box-sizing: border-box;
     width: 90%;
     margin: 10px auto; }
+
   .requirements {
     display: flex;
     flex-wrap: wrap;
@@ -296,6 +291,7 @@ a:hover:after {
     .requirements > p {
       width: 49%;
       box-sizing: border-box; }
+
   .wrapper {
     height: 40px;
     overflow: hidden;
@@ -309,7 +305,6 @@ a:hover:after {
       transition-property: height;
       transition-duration: .5s;
       transition-delay: .1s; } }
-
 /**************************************
  * Animations
  **************************************/
@@ -319,3 +314,5 @@ a:hover:after {
     opacity: 1/9; }
   to {
     opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
