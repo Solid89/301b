@@ -243,20 +243,10 @@ a:hover:after {
 		@include card-layout;
       }
 	.preamble{
-            @include flex-half;
-
-        > h3 {
-          box-sizing: border-box;
-          width: $full-width;
-        }
-
-        > p {
-          box-sizing: border-box;
-          width: 32%;
-        }
+        @include flex-half;
+		@include preamble-layout;	
+        
       }
-  
-
     .requirements{
 		@include flex-wrapping;
 		@include requirements-layout;
