@@ -202,26 +202,27 @@ a:hover:after {
 			align-items: stretch;
 		}
         .main{
-        width:95vw; margin: 0 auto;
+        	width:95vw; 
+			margin: 0 auto;
         }
         .sidebar{
-        @include design-sidebar;
+        	@include design-sidebar;
         }
         .summary{
-        flex: $flex-full;
-		padding:10px;
-        margin-bottom:16px;
+			flex: $flex-full;
+			padding:10px;
+			margin-bottom:16px;
         }
         .summary p{
             text-align: center;
         }
         .supporting{
-        @include support-section;
+        	@include support-section;
       }
         #zen-intro{
-        @include flex-wrapping;
-        justify-content:space-around;
-        margin-top:48px;
+			@include flex-wrapping;
+			justify-content:space-around;
+			margin-top:48px;
         }
 }
     
@@ -257,13 +258,13 @@ a:hover:after {
   
 
     .requirements{
-   	@include flex-wrapping;
-    box-shadow:$shadows-for-boxes;
-    justify-content: space-between;
-    align-self:$paragraph;
-    padding:20px;
-    margin-top:2%;
-    margin-bottom:2%;
+		@include flex-wrapping;
+		box-shadow:$shadows-for-boxes;
+		justify-content: space-between;
+		align-self:$paragraph;
+		padding:20px;
+		margin-top:2%;
+		margin-bottom:2%;
     
 
     > h3,
