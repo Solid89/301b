@@ -173,21 +173,6 @@ a:hover:after {
   footer {
     text-align: center; } }
 @media all and (min-width: 640px) and (max-width: 1400px) {
-  body .benefits {
-    order: -1;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    flex: 0 0 25%;
-    padding: 5px;
-    margin-top: 1%;
-    background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  body .explanation {
-    order: -2;
-    flex: 0 0 25%;
-    padding: 5px;
-    margin-top: 1%;
-    background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   body footer {
     flex: 0 0 95%;
     background-color: transparent;
@@ -201,13 +186,6 @@ a:hover:after {
   body .main {
     width: 95vw;
     margin: 0 auto; }
-  body .participation {
-    order: 0;
-    flex: 0 0 25%;
-    padding: 5px;
-    margin-top: 1%;
-    background: HSLA(0, 0%, 100%, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   body .sidebar {
     position: fixed;
     width: 25%;
@@ -235,6 +213,51 @@ a:hover:after {
     justify-content: space-around;
     margin-top: 48px; }
 
+  .benefits {
+    order: -1;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .benefits > h3 {
+      box-sizing: border-box;
+      width: 100%; }
+    .benefits > p {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 10px auto; }
+
+  .explanation {
+    order: -2;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .explanation > h3 {
+      box-sizing: border-box;
+      width: 100%; }
+    .explanation > p {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 10px auto; }
+
+  .participation {
+    order: 0;
+    flex: 0 0 25%;
+    padding: 5px;
+    margin-top: 1%;
+    background: HSLA(0, 0%, 100%, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .participation > h3 {
+      box-sizing: border-box;
+      width: 100%; }
+    .participation > p {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 10px auto; }
+
   .preamble {
     width: 50%;
     display: flex;
@@ -253,22 +276,6 @@ a:hover:after {
     .preamble > p {
       box-sizing: border-box;
       width: 32%; }
-
-  .explanation > h3 {
-    box-sizing: border-box;
-    width: 100%; }
-  .explanation > p {
-    box-sizing: border-box;
-    width: 90%;
-    margin: 10px auto; }
-
-  .benefits > h3 {
-    box-sizing: border-box;
-    width: 100%; }
-  .benefits > p {
-    box-sizing: border-box;
-    width: 90%;
-    margin: 10px auto; }
 
   .requirements {
     display: flex;

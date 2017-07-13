@@ -1,6 +1,41 @@
 /**************************************
  * Layout Mixins
  **************************************/
+@mixin body-cards{
+        flex:$flex-column-support;
+        padding:5px;
+        margin-top:1%;
+        background: $Card1;
+        box-shadow: $shadows-for-boxes;
+    }
+@mixin card-layout{
+	> h3 {
+          box-sizing: border-box;
+          width: $full-width;
+        }
+        > p {
+          box-sizing: border-box;
+          width: 90%;
+          margin: 10px auto;
+        }
+}
+@mixin design-footer{
+	flex:$flex-full;
+	background-color:transparent;
+	flex-direction:$flex-row;
+	text-align: center !important;
+}
+@mixin design-sidebar{
+	position: fixed;
+	width:25%;
+	left: 71vw;
+	top: 0;
+	border: 2px solid black;
+	border-radius: 0px 0px 14px 14px;
+	background: $Card2;
+  transform: scale(1, -1);
+  transform:rotate(360deg);
+}
 @mixin flex-full{
   display: $flex-display;
   width: 100%;
@@ -45,32 +80,9 @@
     display: flex;
 	flex-wrap: wrap;
 }
-@mixin body-cards{
-        flex:$flex-column-support;
-        padding:5px;
-        margin-top:1%;
-        background: $Card1;
-        box-shadow: $shadows-for-boxes;
-    }
-@mixin design-footer{
-	flex:$flex-full;
-	background-color:transparent;
-	flex-direction:$flex-row;
-	text-align: center !important;
-}
 
 
-@mixin design-sidebar{
-	position: fixed;
-	width:25%;
-	left: 71vw;
-	top: 0;
-	border: 2px solid black;
-	border-radius: 0px 0px 14px 14px;
-	background: $Card2;
-  transform: scale(1, -1);
-  transform:rotate(360deg);
-}
+
 @mixin sidebar-hover{
     overflow: visible;
     background: $Card2;

@@ -188,18 +188,7 @@ a:hover:after {
 @media all and (min-width: 640px) and (max-width: 1400px){
     
     body{
-        
-        .benefits{
-        order:-1;
-        box-shadow:$shadows-for-boxes;
-        @include body-cards;
-        }
-        
-        .explanation{
-        order:-2;
-        @include body-cards;
-        }
-        
+  
         footer{
         @include design-footer;
         }
@@ -214,10 +203,7 @@ a:hover:after {
         .main{
         width:95vw; margin: 0 auto;
       }
-        .participation{
-        order:0;
-        @include body-cards;
-      }
+        
         
         .sidebar{
         @include design-sidebar;
@@ -242,7 +228,22 @@ a:hover:after {
 }
     
  //multiple nestins not appropriate to nest in body
-  .preamble{
+  	.benefits{
+		order:-1;
+		@include body-cards;
+		@include card-layout;
+  }
+	.explanation{
+	  	order:-2;
+        @include body-cards;
+        @include card-layout;
+      }
+	.participation{
+        order:0;
+        @include body-cards;
+		@include card-layout;
+      }
+	.preamble{
             @include flex-half;
 
         > h3 {
@@ -255,31 +256,10 @@ a:hover:after {
           width: 32%;
         }
       }
-  .explanation{
-        > h3 {
-          box-sizing: border-box;
-          width: $full-width;
-        }
-        > p {
-          box-sizing: border-box;
-          width: 90%;
-          margin: 10px auto;
-        }
-      }
-  .benefits{
-    
-    > h3 {
-      box-sizing: border-box;
-      width: $full-width;
-    }
-    > p {
-      box-sizing: border-box;
-      width: 90%;
-      margin: 10px auto;
-    }
-  }
+  
+
     .requirements{
-   @include flex-wrapping;
+   	@include flex-wrapping;
     box-shadow:$shadows-for-boxes;
     justify-content: space-between;
     align-self:$paragraph;
