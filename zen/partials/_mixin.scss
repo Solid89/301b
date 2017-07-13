@@ -71,6 +71,21 @@
   transform: scale(1, -1);
   transform:rotate(360deg);
 }
+@mixin sidebar-hover{
+    overflow: visible;
+    background: $Card2;
+    height: $full-width;
+    transition: .4s ease .25s;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-delay: .1s;
+}
+@mixin sidebar-wrapper{
+    height: 40px;
+    overflow: hidden;
+    z-index: 1000;
+    border-radius: 0px 2px 14px 14px;
+}
 
 @mixin support-section{
 	display:$display-flex;
