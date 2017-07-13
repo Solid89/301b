@@ -259,12 +259,7 @@ a:hover:after {
 
     .requirements{
 		@include flex-wrapping;
-		box-shadow:$shadows-for-boxes;
-		justify-content: space-between;
-		align-self:$paragraph;
-		padding:20px;
-		margin-top:2%;
-		margin-bottom:2%;
+		@include requirements-layout;
     
 
     > h3,
