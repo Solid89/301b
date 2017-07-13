@@ -15,7 +15,6 @@ body{
 	padding:16px;
 	margin: 0 auto;
 	background: $Card6;
-	// does this go here?
 	@include flex-wrapping;
    
 }
@@ -199,7 +198,7 @@ a:hover:after {
         .explanation{
         order:-2;
         @include body-cards;
-        @include box-background;}
+        }
         
         footer{
         @include design-footer;
@@ -218,7 +217,6 @@ a:hover:after {
         .participation{
         order:0;
         @include body-cards;
-        @include box-background;
       }
         
         .sidebar{
@@ -281,7 +279,7 @@ a:hover:after {
   }
     .requirements{
    @include flex-wrapping;
-   @include box-background;  
+    box-shadow:$shadows-for-boxes;
     justify-content: space-between;
     align-self:$paragraph;
     padding:20px;

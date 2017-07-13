@@ -50,6 +50,7 @@
         padding:5px;
         margin-top:1%;
         background: $Card1;
+        box-shadow: $shadows-for-boxes;
     }
 @mixin design-footer{
 	flex:$flex-full;
@@ -97,10 +98,7 @@
 /**************************************
  * Style Mixins
  **************************************/
-@mixin box-background{
-	box-shadow: $shadows-for-boxes;
-  //border-radius: $border-radius-size;
-}
+
 
 @mixin link1{
   text-decoration: none;
