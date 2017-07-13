@@ -89,6 +89,16 @@
 	padding:20px;
 	margin-top:2%;
 	margin-bottom:2%;
+	> h3,
+    > p[role="contentinfo"] {
+      width: $full-width;
+      box-sizing: border-box;
+    }
+
+    > p {
+      width: 49%;
+      box-sizing: border-box;
+    }
 }
 @mixin sidebar-hover{
     overflow: visible;

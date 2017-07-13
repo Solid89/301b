@@ -260,18 +260,6 @@ a:hover:after {
     .requirements{
 		@include flex-wrapping;
 		@include requirements-layout;
-    
-
-    > h3,
-    > p[role="contentinfo"] {
-      width: $full-width;
-      box-sizing: border-box;
-    }
-
-    > p {
-      width: 49%;
-      box-sizing: border-box;
-    }
 
   }
 	.wrapper{
