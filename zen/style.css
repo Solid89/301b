@@ -220,6 +220,7 @@ a:hover:after {
     transform: rotate(360deg); }
   body .summary {
     flex: 0 0 95%;
+    padding: 10px;
     margin-bottom: 16px; }
   body .summary p {
     text-align: center; }
