@@ -190,7 +190,7 @@ a:hover:after {
     body{
   
         footer{
-        @include design-footer;
+        	@include design-footer;
         }
     
         header{
@@ -198,13 +198,12 @@ a:hover:after {
 		  padding: 16px;
         }
         
-        .intro{ align-items: stretch;}
-        
+        .intro{
+			align-items: stretch;
+		}
         .main{
         width:95vw; margin: 0 auto;
-      }
-        
-        
+        }
         .sidebar{
         @include design-sidebar;
         }
@@ -224,7 +223,6 @@ a:hover:after {
         justify-content:space-around;
         margin-top:48px;
         }
-
 }
     
  //multiple nestins not appropriate to nest in body
