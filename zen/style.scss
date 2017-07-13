@@ -212,6 +212,7 @@ a:hover:after {
 			flex: $flex-full;
 			padding:10px;
 			margin-bottom:16px;
+			box-shadow:$shadows-for-boxes;
         }
         .summary p{
             text-align: center;
