@@ -169,9 +169,9 @@ a:hover:after {
 @media all and (min-width: 200px) and (max-width: 639px) {
   .summary, .preamble, .explanation, .requirements, .sidebar {
     background: transparent; }
-
   footer {
     text-align: center; } }
+
 @media all and (min-width: 640px) and (max-width: 1400px) {
   body footer {
     flex: 0 0 95%;
@@ -198,7 +198,7 @@ a:hover:after {
     transform: rotate(360deg); }
   body .summary {
     flex: 0 0 95%;
-    padding: 10px;
+    padding: 15.5px;
     margin-bottom: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   body .summary p {
@@ -213,7 +213,6 @@ a:hover:after {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 48px; }
-
   .benefits {
     order: -1;
     flex: 0 0 25%;
@@ -228,7 +227,6 @@ a:hover:after {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
-
   .explanation {
     order: -2;
     flex: 0 0 25%;
@@ -243,7 +241,6 @@ a:hover:after {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
-
   .participation {
     order: 0;
     flex: 0 0 25%;
@@ -258,7 +255,6 @@ a:hover:after {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
-
   .preamble {
     width: 50%;
     display: flex;
@@ -277,7 +273,6 @@ a:hover:after {
     .preamble > p {
       box-sizing: border-box;
       width: 32%; }
-
   .requirements {
     display: flex;
     flex-wrap: wrap;
@@ -294,7 +289,6 @@ a:hover:after {
     .requirements > p {
       width: 49%;
       box-sizing: border-box; }
-
   .wrapper {
     height: 40px;
     overflow: hidden;
@@ -308,6 +302,7 @@ a:hover:after {
       transition-property: height;
       transition-duration: .5s;
       transition-delay: .1s; } }
+
 /**************************************
  * Animations
  **************************************/
@@ -317,5 +312,3 @@ a:hover:after {
     opacity: 1/9; }
   to {
     opacity: 1; } }
-
-/*# sourceMappingURL=style.css.map */
