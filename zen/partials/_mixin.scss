@@ -37,7 +37,7 @@
   transform:rotate(360deg);
 }
 @mixin flex-full{
-  display: $flex-display;
+  display: $display-flex;
   width: 100%;
 	text-align: $text-align;
 	border-radius: $border-radius-size;
@@ -82,15 +82,32 @@
 }
 
 @mixin preamble-layout{
-	> h3 {
-          box-sizing: border-box;
-          width: $full-width;
-        }
+// 	> h3 {
+//           box-sizing: border-box;
+//           width: $full-width;
+//         }
 
-        > p {
-          box-sizing: border-box;
-          width: 32%;
-        }
+//         > p {
+//           box-sizing: border-box;
+//           width: 32%;
+//         }
+// }
+      box-shadow:$shadows-for-boxes;
+	justify-content: space-between;
+	align-self:$paragraph;
+	padding:20px;
+	margin-top:2%;
+	margin-bottom:2%;
+	> h3,
+    > p[role="contentinfo"] {
+      width: $full-width;
+      box-sizing: border-box;
+    }
+
+    > p {
+      width: 31%;
+      box-sizing: border-box;
+    }
 }
 @mixin requirements-layout{
 	box-shadow:$shadows-for-boxes;
