@@ -33,7 +33,7 @@ body{
 	  	background: $Card2;
 	}
 	.explanation, .requirements{
-		background: $Card1;
+	
 		width: $full-width;
 	}
 	h1{
@@ -64,11 +64,8 @@ body{
 		width: $full-width;
 		min-width: 400px;
 	}
-	.preamble{
-	  	background: $Card1;
-	}
+	
 	.summary{
-		background: $Card1;
 		width:$full-width;
 	}
 	.supporting{
@@ -103,13 +100,13 @@ header{
   }
 }
 // for smaller screen sizes
-@media all and (min-width: 200px) and (max-width: 639px){
-  .summary, .preamble, .explanation, .requirements, .sidebar {
+@media all and (max-width: 639px) and (min-width: 200px){
+  .summary, .preamble, .requirements, .sidebar, header {
     background: transparent;
   }
   footer{
     text-align: center;
-  }
+	}
 }
 //laptop version
 @media all and (min-width: 640px) {
@@ -150,6 +147,9 @@ header{
 			justify-content:space-around;
 			margin-top:48px;
 		}
+		.preamble{
+	  	background: $Card1;
+	}
 }
  //multiple nestins not appropriate to nest in body
 .benefits{
@@ -174,7 +174,9 @@ header{
 .requirements{
 	@include flex-wrapping;
 	@include requirements-layout;
+	background: $Card1;
 }
+
 .wrapper{
 	@include sidebar-wrapper;
 	&:hover{

@@ -47,7 +47,6 @@ body {
   body .design-archives, body .design-selection {
     background: HSLA(200, 88%, 53%, 1); }
   body .explanation, body .requirements {
-    background: HSLA(0, 0%, 100%, 1);
     width: 100%; }
   body h1 {
     font-size: 40.5pt; }
@@ -75,10 +74,7 @@ body {
   body .participation {
     width: 100%;
     min-width: 400px; }
-  body .preamble {
-    background: HSLA(0, 0%, 100%, 1); }
   body .summary {
-    background: HSLA(0, 0%, 100%, 1);
     width: 100%; }
   body .supporting {
     background: transparent; }
@@ -120,8 +116,8 @@ header {
     margin: 0;
     width: 100%; }
 
-@media all and (min-width: 200px) and (max-width: 639px) {
-  .summary, .preamble, .explanation, .requirements, .sidebar {
+@media all and (max-width: 639px) and (min-width: 200px) {
+  .summary, .preamble, .requirements, .sidebar, header {
     background: transparent; }
   footer {
     text-align: center; } }
@@ -169,6 +165,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 48px; }
+  body .preamble {
+    background: HSLA(0, 0%, 100%, 1); }
   .benefits {
     order: -1;
     flex: 0 0 25%;
@@ -233,7 +231,8 @@ header {
     justify-content: space-between;
     padding: 20px;
     margin-top: 2%;
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    background: HSLA(0, 0%, 100%, 1); }
     .requirements > h3,
     .requirements > p[role="contentinfo"] {
       width: 100%;
