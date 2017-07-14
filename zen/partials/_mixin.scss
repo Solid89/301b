@@ -190,10 +190,3 @@
   background-color: #333;
   transition: all 0.3s linear;
 }
-//TODO: What is the point of this mixin?
-// This is almost as much work as just writing out the rules.
-// Brother Blaylock
-@mixin link3{
-  width: 100%;
-  left: 0;
-}
