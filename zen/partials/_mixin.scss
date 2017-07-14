@@ -112,23 +112,11 @@
 	margin-bottom: 16px;
 	text-decoration: none;
 	background: $Card1;
-  	padding: 20px;
-	
+  padding: 20px;
 }
 @mixin preamble-layout{
-// 	> h3 {
-//           box-sizing: border-box;
-//           width: $full-width;
-//         }
-
-//         > p {
-//           box-sizing: border-box;
-//           width: 32%;
-//         }
-// }
-      box-shadow:$shadows-for-boxes;
+  box-shadow:$shadows-for-boxes;
 	justify-content: space-between;
-	// align-self:$paragraph;
 	padding:20px;
 	margin-top:2%;
 	margin-bottom:2%;
@@ -137,11 +125,10 @@
       width: $full-width;
       box-sizing: border-box;
     }
-
     > p {
-      width: 31%;
-      box-sizing: border-box;
-    }
+        width: 31%;
+        box-sizing: border-box;
+      }
 }
 @mixin requirements-layout{
 	box-shadow:$shadows-for-boxes;
@@ -155,28 +142,26 @@
       width: $full-width;
       box-sizing: border-box;
     }
-
     > p {
       width: 49%;
       box-sizing: border-box;
-    }
+      }
 }
 @mixin sidebar-hover{
-    overflow: visible;
-    background: $Card2;
-    height: $full-width;
-    transition: .4s ease .25s;
-    transition-property: height;
-    transition-duration: .5s;
-    transition-delay: .1s;
+  overflow: visible;
+  background: $Card2;
+  height: $full-width;
+  transition: .4s ease .25s;
+  transition-property: height;
+  transition-duration: .5s;
+  transition-delay: .1s;
 }
 @mixin sidebar-wrapper{
-    height: 40px;
-    overflow: hidden;
-    z-index: 1000;
-    border-radius: 0px 2px 14px 14px;
+  height: 40px;
+  overflow: hidden;
+  z-index: 1000;
+  border-radius: 0px 2px 14px 14px;
 }
-
 @mixin support-section{
 	display:$display-flex;
 	flex-wrap:$flex-wrap;
@@ -195,7 +180,6 @@
 	color: $Card4;
 	position: relative;
 }
-
 @mixin link2{
   position: absolute;
   content: "";
@@ -206,7 +190,6 @@
   background-color: #333;
   transition: all 0.3s linear;
 }
-
 //TODO: What is the point of this mixin?
 // This is almost as much work as just writing out the rules.
 // Brother Blaylock
