@@ -15,7 +15,7 @@ body{
 	@include flex-wrapping;
 	
 	a{
-		@inlcude a-style-link;
+		@include a-style-link;
 	}
 	// do above for specific or below for all links
 	a {
@@ -43,7 +43,7 @@ body{
 		font-size: 40.5pt;
 	}
 	h2{
-		@inlcude h2-fonts;
+		@include h2-fonts;
 	}
 	h3{
 		text-align: center;

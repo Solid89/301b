@@ -22,7 +22,10 @@ body {
   display: flex;
   flex-wrap: wrap; }
   body a {
-    @inlcude a-style-link; }
+    text-decoration: none;
+    color: HSLA(45, 89%, 57%, 1);
+    font-weight: bold;
+    position: relative; }
   body a {
     text-decoration: none;
     color: HSLA(45, 89%, 57%, 1);
@@ -49,7 +52,8 @@ body {
   body h1 {
     font-size: 40.5pt; }
   body h2 {
-    @inlcude h2-fonts; }
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif; }
   body h3 {
     text-align: center; }
   body .main {
@@ -119,9 +123,9 @@ header {
 @media all and (min-width: 200px) and (max-width: 639px) {
   .summary, .preamble, .explanation, .requirements, .sidebar {
     background: transparent; }
+
   footer {
     text-align: center; } }
-
 @media all and (min-width: 640px) {
   body footer {
     flex: 0 0 95%;
@@ -165,6 +169,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 48px; }
+
   .benefits {
     order: -1;
     flex: 0 0 25%;
@@ -179,6 +184,7 @@ header {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
+
   .explanation {
     order: -2;
     flex: 0 0 25%;
@@ -193,6 +199,7 @@ header {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
+
   .participation {
     order: 0;
     flex: 0 0 25%;
@@ -207,6 +214,7 @@ header {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
+
   .preamble {
     display: flex;
     flex-wrap: wrap;
@@ -222,6 +230,7 @@ header {
     .preamble > p {
       width: 31%;
       box-sizing: border-box; }
+
   .requirements {
     display: flex;
     flex-wrap: wrap;
@@ -237,6 +246,7 @@ header {
     .requirements > p {
       width: 49%;
       box-sizing: border-box; }
+
   .wrapper {
     height: 40px;
     overflow: hidden;
@@ -250,7 +260,6 @@ header {
       transition-property: height;
       transition-duration: .5s;
       transition-delay: .1s; } }
-
 /**************************************
  * Animations
  **************************************/
@@ -260,3 +269,5 @@ header {
     opacity: 1/9; }
   to {
     opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
