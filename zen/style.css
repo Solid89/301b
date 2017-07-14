@@ -169,9 +169,9 @@ a:hover:after {
 @media all and (min-width: 200px) and (max-width: 639px) {
   .summary, .preamble, .explanation, .requirements, .sidebar {
     background: transparent; }
+
   footer {
     text-align: center; } }
-
 @media all and (min-width: 640px) {
   body footer {
     flex: 0 0 95%;
@@ -197,6 +197,7 @@ a:hover:after {
     transform: scale(1, -1);
     transform: rotate(360deg); }
   body .summary {
+    order: -1;
     flex: 0 0 95%;
     padding: 15.5px;
     margin-bottom: 16px;
@@ -209,10 +210,12 @@ a:hover:after {
     justify-content: space-around;
     justify-content: center; }
   body #zen-intro {
+    order: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 48px; }
+
   .benefits {
     order: -1;
     flex: 0 0 25%;
@@ -227,6 +230,7 @@ a:hover:after {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
+
   .explanation {
     order: -2;
     flex: 0 0 25%;
@@ -241,6 +245,7 @@ a:hover:after {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
+
   .participation {
     order: 0;
     flex: 0 0 25%;
@@ -255,6 +260,7 @@ a:hover:after {
       box-sizing: border-box;
       width: 90%;
       margin: 10px auto; }
+
   .preamble {
     display: flex;
     flex-wrap: wrap;
@@ -271,6 +277,7 @@ a:hover:after {
     .preamble > p {
       width: 31%;
       box-sizing: border-box; }
+
   .requirements {
     display: flex;
     flex-wrap: wrap;
@@ -287,6 +294,7 @@ a:hover:after {
     .requirements > p {
       width: 49%;
       box-sizing: border-box; }
+
   .wrapper {
     height: 40px;
     overflow: hidden;
@@ -300,7 +308,6 @@ a:hover:after {
       transition-property: height;
       transition-duration: .5s;
       transition-delay: .1s; } }
-
 /**************************************
  * Animations
  **************************************/
@@ -310,3 +317,5 @@ a:hover:after {
     opacity: 1/9; }
   to {
     opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -209,6 +209,7 @@ a:hover:after {
         	@include design-sidebar;
         }
         .summary{
+			order:-1;
 			flex: $flex-full;
 			padding:15.5px;
 			margin-bottom:16px;
@@ -221,6 +222,7 @@ a:hover:after {
         	@include support-section;
       }
         #zen-intro{
+			order:1;
 			@include flex-wrapping;
 			justify-content:space-around;
 			margin-top:48px;
@@ -244,8 +246,7 @@ a:hover:after {
 		@include card-layout;
       }
 	.preamble{
-        @include flex-wrapping;
-		// @include preamble-layout;	
+        @include flex-wrapping;	
         @include preamble-layout;
       }
     .requirements{
