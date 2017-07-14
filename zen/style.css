@@ -21,6 +21,72 @@ body {
   background: HSLA(0, 0%, 95%, 1);
   display: flex;
   flex-wrap: wrap; }
+  body a {
+    @inlcude a-style-link; }
+  body aside {
+    background: HSLA(0, 0%, 100%, 1); }
+  body .benefits {
+    flex-shrink: auto; }
+  body .design-archives, body .design-selection {
+    background: HSLA(200, 88%, 53%, 1); }
+  body .explanation, body .requirements {
+    background: HSLA(0, 0%, 100%, 1);
+    width: 100%; }
+  body h1 {
+    font-size: 40.5pt; }
+  body h2 {
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif; }
+  body h3 {
+    text-align: center; }
+  body .main {
+    background: transparent; }
+  body p {
+    background: HSLA(200, 88%, 53%, 1);
+    position: relative;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 16px;
+    margin-bottom: 16px; }
+  body .page-wrapper, body .intro, body .supporting {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: .6s;
+    animation-delay: .3s; }
+  body .participation {
+    width: 100%;
+    min-width: 400px; }
+  body .preamble {
+    background: HSLA(0, 0%, 100%, 1); }
+  body .summary {
+    background: HSLA(0, 0%, 100%, 1);
+    width: 100%; }
+  body .supporting {
+    background: transparent; }
+  body ul {
+    list-style-type: none;
+    color: black;
+    text-align: left; }
+  body .zen-resources {
+    background: HSLA(200, 88%, 53%, 1); }
+  body .zen-validate-html {
+    text-decoration: none;
+    color: HSLA(45, 89%, 57%, 1);
+    position: relative; }
+  body .zen-validate-html:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s linear; }
+  body .zen-validate-html:hover:after {
+    width: 100%;
+    left: 0; }
 
 header {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -36,116 +102,6 @@ header {
   header h2 {
     margin: 0;
     width: 100%; }
-
-.summary {
-  background: HSLA(0, 0%, 100%, 1);
-  width: 100%; }
-
-.preamble {
-  background: HSLA(0, 0%, 100%, 1); }
-
-.supporting {
-  background: transparent; }
-
-aside {
-  background: HSLA(0, 0%, 100%, 1); }
-
-.design-archives {
-  background: HSLA(200, 88%, 53%, 1); }
-
-.design-selection {
-  background: HSLA(200, 88%, 53%, 1); }
-
-.zen-resources {
-  background: HSLA(200, 88%, 53%, 1); }
-
-.main {
-  background: transparent; }
-
-.requirements {
-  background: HSLA(0, 0%, 100%, 1);
-  width: 100%; }
-
-.explanation {
-  width: 100%;
-  background: HSLA(0, 0%, 100%, 1); }
-
-.participation {
-  width: 100%;
-  min-width: 400px; }
-
-.benefits {
-  flex-shrink: auto; }
-
-h3 {
-  text-align: center; }
-
-p {
-  background: HSLA(200, 88%, 53%, 1);
-  position: relative;
-  text-align: left;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  padding: 16px;
-  margin-bottom: 16px; }
-
-.page-wrapper {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: .3s; }
-
-.intro {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: .6s; }
-
-.supporting {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: .9s; }
-
-a {
-  text-decoration: none;
-  color: HSLA(45, 89%, 57%, 1);
-  font-weight: bold;
-  position: relative; }
-
-ul {
-  list-style-type: none;
-  color: black;
-  text-align: left; }
-
-h1 {
-  font-size: 40.5pt; }
-
-h2 {
-  font-size: 15pt;
-  font-family: Arial, Helvetica, sans-serif; }
-
-.zen-validate-html {
-  text-decoration: none;
-  color: HSLA(45, 89%, 57%, 1);
-  position: relative; }
-
-.zen-validate-html:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -1px;
-  height: 2px;
-  background-color: #333;
-  transition: all 0.3s linear; }
-
-.zen-validate-html:hover:after {
-  width: 100%;
-  left: 0; }
 
 a {
   text-decoration: none;

@@ -11,155 +11,94 @@
 @import 'partials/mixin';
 
 body{
-	font: 15px/1.5 Arial, Helvetica, sans-serif;
-	padding:16px;
-	margin: 0 auto;
-	background: $Card6;
+	@include body-layout-style;
 	@include flex-wrapping;
-   
+	
+	a{
+		@inlcude a-style-link;
+	}
+	aside{
+	 	background: $Card1;
+	}
+	.benefits{
+		flex-shrink: auto;
+	}
+	.design-archives, .design-selection{
+	  	background: $Card2;
+	}
+	.explanation, .requirements{
+		background: $Card1;
+		width: $full-width;
+	}
+	h1{
+		font-size: 40.5pt;
+	}
+
+	h2{
+		font-size: 15pt;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	h3{
+		text-align: center;
+	}
+	.main{
+	  	background: $background-transparent;
+	}
+	p{
+		background: $Card2;
+		position: $position;
+		text-align: $paragraph;
+		box-shadow: $shadows-for-boxes;
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		padding: 16px;
+		margin-bottom: 16px;
+	}
+	.page-wrapper, .intro, .supporting {
+		@include card-fade-in;
+	}
+	.participation{
+		width: $full-width;
+		min-width: 400px;
+	}
+	.preamble{
+	  	background: $Card1;
+	}
+	.summary{
+		background: $Card1;
+		width:$full-width;
+	}
+	.supporting{
+		background: $background-transparent;
+	}
+	ul{
+		list-style-type: none;
+		color: black;  // the word "by"
+		text-align: left;
+	}
+	.zen-resources{
+	  background: $Card2;
+	}
+	.zen-validate-html {
+	  @include link1;
+	}
+
+	.zen-validate-html:after {
+	  @include link2;
+	}
+
+	.zen-validate-html:hover:after {
+	  @include link3;
+	}
 }
 
+//multiple nestins
 header{
-	box-shadow:$shadows-for-boxes;
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	text-align: $text-align;
-	position: $position;
-	text-align: center;
-	margin-bottom: 16px;
-	text-decoration: none;
-	background: $Card1;
-  padding: 20px;
-		
+	@include header-style-layout;
   h1,
   h2 {
     margin: 0;
     width: $full-width;
   }
-}
-
-
-.summary{
-	background: $Card1;
-	width: 100%;
-}
-
-.preamble{
-  background: $Card1;
-}
-
-.supporting{
-  background: transparent;
-}
-
-aside{
- background: $Card1;
-}
-
-.design-archives{
-  background: $Card2;
-}
-
-.design-selection{
-  background: $Card2;
-}
-
-.zen-resources{
-  background: $Card2;
-}
-
-.main{
-  background: transparent;
-}
-
-.requirements{
-	background: $Card1;
-	width: 100%;
-}
-
-.explanation{
-  width: 100%;
-  background: $Card1;
-}
-
-.participation{
-	width: 100%;
-	min-width: 400px;
-}
-
-.benefits{
-	flex-shrink: auto;
-}
-
-h3{
-	text-align: center;
-}
-
-p{
-	background: $Card2;
-	position: $position;
-	text-align: $paragraph;
-	box-shadow: $shadows-for-boxes;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	padding: 16px;
-	margin-bottom: 16px;
-}
-
-.page-wrapper {
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: .6s;
-	animation-delay: .3s;
-}
-
-.intro {
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: .6s;
-	animation-delay: .6s;
-}
-
-.supporting{
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: .6s;
-	animation-delay: .9s;
-}
-
-a{
-	text-decoration: none;
-	color: $Card4; // actual link
-	font-weight: bold;
-	position: relative;
-}
-
-ul{
-	list-style-type: none;
-	color: black;  // the word "by"
-	text-align: left;
-}
-
-h1{
-	font-size: 40.5pt;
-}
-
-h2{
-	font-size: 15pt;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.zen-validate-html {
-  @include link1;
-}
-
-.zen-validate-html:after {
-  @include link2;
-}
-
-.zen-validate-html:hover:after {
-  @include link3;
 }
 
 // do above for specific or below for all links
@@ -174,6 +113,8 @@ a:after {
 a:hover:after {
   @include link3;
 }
+
+// for smaller screen sizes
 @media all and (min-width: 200px) and (max-width: 639px){
   .summary, .preamble, .explanation, .requirements, .sidebar {
     background: transparent;

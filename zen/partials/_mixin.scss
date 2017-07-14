@@ -1,6 +1,12 @@
 /**************************************
  * Layout Mixins
  **************************************/
+@mixin a-style-link{
+		text-decoration: none;
+		color: $Card4; // actual link
+		font-weight: bold;
+		position: relative;
+}
 @mixin body-cards{
         flex:$flex-column-support;
         padding:5px;
@@ -8,6 +14,19 @@
         background: $Card1;
         box-shadow: $shadows-for-boxes;
     }
+@mixin body-layout-style{
+	font: $body-fonts;
+	padding:16px;
+	margin: 0 auto;
+	background: $Card6;
+}
+@mixin card-fade-in{
+		opacity: 0;
+		animation: fadeIn ease-in 1;
+		animation-fill-mode: forwards;
+		animation-duration: .6s;
+		animation-delay: .3s;
+}
 @mixin card-layout{
 	> h3 {
           box-sizing: border-box;
@@ -80,7 +99,18 @@
     display: flex;
 	flex-wrap: wrap;
 }
-
+@mixin header-style-layout{
+	box-shadow:$shadows-for-boxes;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	text-align: $text-align;
+	position: $position;
+	text-align: center;
+	margin-bottom: 16px;
+	text-decoration: none;
+	background: $Card1;
+  	padding: 20px;
+	
+}
 @mixin preamble-layout{
 // 	> h3 {
 //           box-sizing: border-box;
