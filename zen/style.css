@@ -110,11 +110,19 @@ header {
   margin-bottom: 16px;
   text-decoration: none;
   background: HSLA(0, 0%, 100%, 1);
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  animation: wobble 10s ease-in-out alternate infinite; }
   header h1,
   header h2 {
     margin: 0;
     width: 100%; }
+
+@keyframes wobble {
+  50% {
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px; }
+  100% {
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px; } }
 
 @media all and (max-width: 639px) and (min-width: 200px) {
   .summary, .preamble, .requirements, .sidebar, header {
@@ -151,7 +159,8 @@ header {
     flex: 0 0 95%;
     padding: 15.5px;
     margin-bottom: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: HSLA(0, 0%, 100%, 1); }
   body .summary p {
     text-align: center; }
   body .supporting {
