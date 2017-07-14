@@ -128,7 +128,7 @@
 // }
       box-shadow:$shadows-for-boxes;
 	justify-content: space-between;
-	align-self:$paragraph;
+	// align-self:$paragraph;
 	padding:20px;
 	margin-top:2%;
 	margin-bottom:2%;
@@ -146,7 +146,7 @@
 @mixin requirements-layout{
 	box-shadow:$shadows-for-boxes;
 	justify-content: space-between;
-	align-self:$paragraph;
+	// align-self:$paragraph;
 	padding:20px;
 	margin-top:2%;
 	margin-bottom:2%;
