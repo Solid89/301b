@@ -23,6 +23,22 @@ body {
   flex-wrap: wrap; }
   body a {
     @inlcude a-style-link; }
+  body a {
+    text-decoration: none;
+    color: HSLA(45, 89%, 57%, 1);
+    position: relative; }
+  body a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s linear; }
+  body a:hover:after {
+    width: 100%;
+    left: 0; }
   body aside {
     background: HSLA(0, 0%, 100%, 1); }
   body .benefits {
@@ -102,25 +118,6 @@ header {
   header h2 {
     margin: 0;
     width: 100%; }
-
-a {
-  text-decoration: none;
-  color: HSLA(45, 89%, 57%, 1);
-  position: relative; }
-
-a:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -1px;
-  height: 2px;
-  background-color: #333;
-  transition: all 0.3s linear; }
-
-a:hover:after {
-  width: 100%;
-  left: 0; }
 
 @media all and (min-width: 200px) and (max-width: 639px) {
   .summary, .preamble, .explanation, .requirements, .sidebar {

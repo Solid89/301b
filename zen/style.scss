@@ -17,6 +17,18 @@ body{
 	a{
 		@inlcude a-style-link;
 	}
+	// do above for specific or below for all links
+	a {
+	  @include link1;
+	}
+
+	a:after {
+	  @include link2;
+	}
+
+	a:hover:after {
+	  @include link3;
+	}
 	aside{
 	 	background: $Card1;
 	}
@@ -100,20 +112,6 @@ header{
     width: $full-width;
   }
 }
-
-// do above for specific or below for all links
-a {
-  @include link1;
-}
-
-a:after {
-  @include link2;
-}
-
-a:hover:after {
-  @include link3;
-}
-
 // for smaller screen sizes
 @media all and (min-width: 200px) and (max-width: 639px){
   .summary, .preamble, .explanation, .requirements, .sidebar {
