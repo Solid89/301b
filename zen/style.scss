@@ -57,9 +57,9 @@ body{
 		padding: 16px;
 		margin-bottom: 16px;
 	}
-	.page-wrapper, .intro, .supporting {
-		@include card-fade-in;
-	}
+	// .page-wrapper, .intro, .supporting {
+	// 	@include card-fade-in;
+	// }
 	.participation{
 		width: $full-width;
 		min-width: 400px;
@@ -98,17 +98,17 @@ header{
     margin: 0;
     width: $full-width;
 	}
-	border-radius: 250px 750px 250px 750px /
-                 750px 250px 750px 250px;
-	animation: wobble 10s ease-in-out alternate infinite;
+	border-radius: 125px 375px 125px 375px /
+								 375px 125px 375px 250px;
+	animation: wobble 5s ease-in-out alternate infinite;
 	@keyframes wobble{
 		50% {
-    border-radius: 750px 550px 350px 750px /
-                   350px 750px 550px 450px;
+    border-radius: 375px 225px 175px 375px /
+                   350px 375px 550px 450px;
   }
   100% {
-    border-radius: 750px 250px 750px 250px /
-                   250px 750px 250px 750px;
+    border-radius: 375px 125px 375px 250px /
+                   125px 375px 125px 375px;
   	}
 }
 }
