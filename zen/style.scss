@@ -12,6 +12,8 @@
 body{
 	@include body-layout-style;
 	@include flex-wrapping;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwlDKLEQYloswnPkHyCInGa3uwyeD-MC2By4HRUwMUEokQr_yTg");
+	background-size: cover;
 	a{
 		@include a-style-link;
 	}
@@ -45,6 +47,7 @@ body{
 	h3{
 		text-align: center;
 	}
+	
 	.main{
 	  	background: $background-transparent;
 	}
