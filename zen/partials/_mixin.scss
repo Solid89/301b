@@ -99,6 +99,10 @@
     display: flex;
 	flex-wrap: wrap;
 }
+@mixin h2-fonts{
+	font-size: 15pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
 @mixin header-style-layout{
 	box-shadow:$shadows-for-boxes;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
