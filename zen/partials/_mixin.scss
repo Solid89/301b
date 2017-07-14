@@ -96,8 +96,8 @@
 	margin-bottom: 1em;
 }
 @mixin flex-wrapping{
-    display: flex;
-	flex-wrap: wrap;
+    display: $display-flex;
+	flex-wrap: $flex-wrap;
 }
 @mixin h2-fonts{
 	font-size: 15pt;
