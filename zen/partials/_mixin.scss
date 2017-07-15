@@ -20,6 +20,11 @@
 	margin: 0 auto;
 	background: $Card6;
 }
+@mixin body-svg{
+	background:url("svg.svg");
+	background-size: cover;
+	background-position: right;
+}
 // @mixin card-fade-in{
 // 		opacity: 0;
 // 		animation: fadeIn ease-in 1;

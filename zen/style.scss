@@ -12,6 +12,7 @@
 body{
 	@include body-layout-style;
 	@include flex-wrapping;
+	@include body-svg;
 	a{
 		@include a-style-link;
 	}
